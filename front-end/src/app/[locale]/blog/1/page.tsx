@@ -109,7 +109,7 @@ export default async function BlogOnePage({ params }: Props) {
 
                     {/* Article Header */}
                     <div className="mt-12 mb-12 text-center">
-                        <h1 className="mt-4 mb-4 text-4xl md:text-5xl lg:text-6xl font-extrabold text-gray-900 leading-tight">
+                        <h1 className="mt-4 mb-4 text-4xl md:text-5xl lg:text-6xl font-extrabold text-gray-900 leading-normal">
                             {/* {article.title} */}
                             {title}
                         </h1>

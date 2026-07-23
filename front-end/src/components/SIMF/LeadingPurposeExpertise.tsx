@@ -151,9 +151,9 @@ export default function LeadingPurposeExpertise({
               className="transition-transform duration-300 hover:scale-105 rounded-[10px] text-black"
             >
               <img
-                src="/sponsors-partners-icon-9.webp"
+                src="/MOD.svg"
                 alt="Under the Supervision of"
-                className="h-[6rem] w-auto object-contain"
+                className="h-[12rem] w-auto object-contain"
               />
             </a>
           </div>
@@ -171,9 +171,9 @@ export default function LeadingPurposeExpertise({
               className="transition-transform duration-300 hover:scale-105  rounded-[10px] text-black"
             >
               <img
-                src="/sponsors-partners-icon-7.webp"
+                src="/SRF.svg"
                 alt="Organized By"
-                className="h-[6rem] w-auto object-contain"
+                className="h-[12rem] w-auto object-contain"
               />
             </a>
           </div>
@@ -201,10 +201,10 @@ export default function LeadingPurposeExpertise({
           {/* edge fade masks */}
           {/* <div className="pointer-events-none absolute inset-y-0 left-0 z-10 w-14 bg-gradient-to-r from-[#f7f4fb] to-transparent" />
           <div className="pointer-events-none absolute inset-y-0 right-0 z-10 w-14 bg-gradient-to-l from-[#f3e6fb] to-transparent" /> */}
-          {/* <div className="absolute right-0 top-[50%] h-[12rem] w-14 -translate-y-1/2 bg-gradient-to-l from-[#EFF7FD] via-[#EFF7FD]/0 to-transparent" />
-          <div className="pointer-events-none absolute left-0 top-[50%] h-[12rem] w-14 -translate-y-1/2 bg-gradient-to-r from-[#EFF7FD] via-[#EFF7FD]/0 to-transparent" /> */}
-          <div className="absolute right-0 top-[50%] h-[12rem] w-14 -translate-y-1/2 bg-gradient-to-l from-[#0a0f1c] via-[#0a0f1c]/0 to-transparent" />
-          <div className="pointer-events-none absolute left-0 top-[50%] h-[12rem] w-14 -translate-y-1/2 bg-gradient-to-r from-[#0a0f1c] via-[#0a0f1c]/0 to-transparent" />
+          <div className="absolute right-0 top-[50%] h-[12rem] w-14 -translate-y-1/2 bg-gradient-to-l from-[#EFF7FD] via-[#EFF7FD]/0 to-transparent" />
+          <div className="pointer-events-none absolute left-0 top-[50%] h-[12rem] w-14 -translate-y-1/2 bg-gradient-to-r from-[#EFF7FD] via-[#EFF7FD]/0 to-transparent" />
+          {/* <div className="absolute right-0 top-[50%] h-[12rem] w-14 -translate-y-1/2 bg-gradient-to-l from-[#0a0f1c] via-[#0a0f1c]/0 to-transparent" />
+          <div className="pointer-events-none absolute left-0 top-[50%] h-[12rem] w-14 -translate-y-1/2 bg-gradient-to-r from-[#0a0f1c] via-[#0a0f1c]/0 to-transparent" /> */}
 
           <div className="overflow-hidden px-14" ref={emblaRef}>
             <div className="flex">
