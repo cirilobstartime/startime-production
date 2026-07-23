@@ -1,0 +1,280 @@
+/* MaritimeHero.module.css
+   Fonts expected (load them in your root layout, e.g. via next/font or a <link>):
+   - Latin:  Inter (400/500/600/700)
+   - Arabic: IBM Plex Sans Arabic (400/500/600/700)
+   Logical properties (inline-start/end) make the layout flip automatically for RTL. */
+
+.hero {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  background: #0a0f1c;
+  font-family: "Inter", system-ui, sans-serif;
+}
+.hero[data-lang="ar"] {
+  font-family: "IBM Plex Sans Arabic", "Inter", system-ui, sans-serif;
+}
+
+.video {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    180deg,
+    rgba(8, 12, 24, 0.72) 0%,
+    rgba(10, 15, 30, 0.45) 45%,
+    rgba(8, 12, 24, 0.78) 100%
+  );
+}
+
+.content {
+  position: relative;
+  z-index: 2;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  max-width: 1240px;
+  margin: 0 auto;
+  padding: 120px 48px 60px;
+  box-sizing: border-box;
+}
+
+.eyebrow {
+  margin: 0;
+  color: #9d8bff;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.35em;
+  text-transform: uppercase;
+}
+.hero[data-lang="ar"] .eyebrow {
+  letter-spacing: 0.12em;
+  font-size: 14px;
+  text-transform: none;
+}
+.eyebrowRule {
+  display: block;
+  width: 30px;
+  height: 2px;
+  background: #6d4cf2;
+  margin-top: 10px;
+}
+
+.title {
+  margin: 36px 0 0;
+  color: #fff;
+  font-size: clamp(30px, 4.5vw, 56px);
+  font-weight: 700;
+  line-height: 1.12;
+  letter-spacing: -0.01em;
+  white-space: nowrap; /* one line on desktop */
+}
+.hero[data-lang="ar"] .title {
+  line-height: 1.35;
+  letter-spacing: 0;
+}
+@media (max-width: 760px) {
+  .title {
+    white-space: normal;
+  }
+}
+
+.subtitle {
+  margin: 32px 0 0;
+  max-width: 600px;
+  color: #c6cddb;
+  font-size: 17px;
+  line-height: 1.65;
+  text-wrap: pretty;
+}
+.hero[data-lang="ar"] .subtitle {
+  font-size: 18px;
+  line-height: 1.9;
+  max-width: 620px;
+}
+
+.actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 16px;
+  margin-top: 56px;
+}
+.btnPrimary,
+.btnSecondary {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 14px 26px;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: 600;
+  color: #fff;
+  text-decoration: none;
+  transition: background 0.2s, border-color 0.2s;
+}
+.btnPrimary {
+  background: #6d4cf2;
+}
+.btnPrimary:hover {
+  background: #5a3ce0;
+}
+.btnSecondary {
+  padding: 13px 26px;
+  background: rgba(13, 18, 32, 0.35);
+  border: 1px solid rgba(255, 255, 255, 0.28);
+}
+.btnSecondary:hover {
+  border-color: rgba(255, 255, 255, 0.6);
+}
+
+.tertiaryLink {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 28px;
+  align-self: flex-start;
+  color: #e6e9f0;
+  font-size: 13px;
+  font-weight: 500;
+  text-decoration: none;
+}
+.tertiaryLink:hover {
+  color: #fff;
+}
+.tertiaryArrow {
+  color: #8f7bff;
+}
+
+.infoBarWrap {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  max-width: 900px;
+  margin: auto auto 0;
+  padding: 0 48px 40px;
+  box-sizing: border-box;
+}
+.infoBar {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 320px));
+  justify-content: center;
+  background: rgba(13, 18, 32, 0.78);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 4px;
+  overflow: hidden;
+}
+.infoCell {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 16px 18px;
+  border-inline-end: 1px solid rgba(255, 255, 255, 0.08);
+}
+.infoCell:last-child {
+  border-inline-end: none;
+}
+.infoIcon {
+  flex: none;
+  width: 40px;
+  height: 40px;
+  border-radius: 8px;
+  background: rgba(109, 76, 242, 0.16);
+  color: #9d8bff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.infoText {
+  min-width: 0;
+}
+.infoLabel {
+  color: #8b93a7;
+  font-size: 10.5px;
+  font-weight: 600;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+}
+.hero[data-lang="ar"] .infoLabel {
+  letter-spacing: 0.06em;
+  font-size: 12px;
+  text-transform: none;
+}
+.infoValue {
+  margin-top: 5px;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1.45;
+}
+
+/* Tablet */
+@media (max-width: 1024px) {
+  .content {
+    padding: 100px 32px 48px;
+  }
+
+  .infoBarWrap {
+    padding: 0 32px 32px;
+  }
+
+  .infoBar {
+    grid-template-columns: repeat(auto-fit, minmax(220px, 320px));
+    justify-content: center;
+  }
+
+  .infoCell {
+    border-inline-end: 1px solid rgba(255, 255, 255, 0.08);
+  }
+
+  .infoCell:last-child {
+    border-inline-end: none;
+  }
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+  .content {
+    padding: 88px 20px 40px;
+  }
+
+  .infoBarWrap {
+    padding: 0 20px 24px;
+  }
+
+  .infoBar {
+    grid-template-columns: 1fr;
+  }
+
+  .infoCell {
+    border-inline-end: none;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  }
+
+  .infoCell:last-child {
+    border-bottom: none;
+  }
+
+  .actions {
+    margin-top: 40px;
+  }
+
+  .btnPrimary,
+  .btnSecondary {
+    width: 100%;
+    justify-content: center;
+    box-sizing: border-box;
+  }
+}

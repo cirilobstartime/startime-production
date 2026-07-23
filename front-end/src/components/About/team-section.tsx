@@ -5,7 +5,7 @@ import { useTranslations } from "next-intl";
 import Image from "next/image";
 import { useEffect, useState } from "react";
 
-const STRAPI_BASE_URL = "https://startime.sa";
+const STRAPI_BASE_URL = "https://staging.startime.sa";
 
 interface CEOData {
   title: string;

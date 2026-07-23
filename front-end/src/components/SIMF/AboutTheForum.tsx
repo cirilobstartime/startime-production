@@ -55,8 +55,9 @@ interface AboutTheForumProps {
   /** SIMF bilingual logo (add e.g. /simf-logo.svg to /public). */
   logoSrc?: string;
   /** Feature photo (add e.g. /simf-about.jpg to /public). */
-  imageSrc?: string;
-  imageAlt?: string;
+  /** Feature video */
+  videoSrc?: string;
+  videoPoster?: string;
   paragraph2Text?: string;
   targetDate?: string;
 }
@@ -92,8 +93,10 @@ export default function AboutTheForum({
   heading2,
   logoSrc = "/simf-logo.webp",
   // imageSrc = "/simf-about-2.png",
-  imageSrc = "/abouttheforum-img.png",
-  imageAlt,
+  //imageSrc = "/abouttheforum-img.png",
+  //imageAlt,
+  videoSrc = "/videos/aboutusvideo-1-en.mp4",
+  videoPoster = "/abouttheforum-img.png",
   paragraph2Text,
   targetDate = "2026-11-16T09:00:00",
 }: AboutTheForumProps) {
@@ -104,7 +107,7 @@ export default function AboutTheForum({
   const headingText = heading ?? t("heading");
   const headingText1 = heading ?? t("heading1");
   const headingText2 = heading ?? t("heading2");
-  const imageAltText = imageAlt ?? t("imageAlt");
+  //const imageAltText = imageAlt ?? t("imageAlt");
   const resolvedParagraph2Text = paragraph2Text ?? t("paragraph2text");
 
   const target = new Date(targetDate).getTime();
@@ -126,6 +129,14 @@ export default function AboutTheForum({
     { value: time.seconds, key: "seconds" },
   ];
 
+  // videoRef
+  const videoRef = React.useRef<HTMLVideoElement>(null);
+  useEffect(() => {
+  videoRef.current?.play().catch((err) => {
+    console.error("Video play failed:", err);
+  });
+}, []);
+
   return (
     <section dir={isAr ? "rtl" : "ltr"} className="w-full bg-white">
       <div className="videodiv mx-auto max-w-[1440px] px-5 sm:px-8 md:px-20 md:mt[-4rem] mt-[-4rem]">
@@ -144,7 +155,7 @@ export default function AboutTheForum({
             {/* {t("registrationClosesIn")} */}
           </p>
 
-          <div className="mt-[12rem] flex items-start justify-center gap-4 sm:gap-6 md:gap-8">
+          <div dir="ltr" className="mt-[12rem] flex items-start justify-center gap-4 sm:gap-6 md:gap-8">
             {units.map(({ value, key }, index) => (
               <motion.div
                 key={key}
@@ -200,8 +211,12 @@ export default function AboutTheForum({
               w-full
               
               font-['Noto Kufi Arabic']
-              text-[24px]
+              text-[32px]
+              
+              leading-[44px]
               text-[#001640]
+              md:text-[30px]
+              md:leading-[56px]
               
             "
             initial={{ opacity: 0, y: 40 }}
@@ -216,8 +231,13 @@ export default function AboutTheForum({
               w-full
               
               font-['Noto Kufi Arabic']
-              text-[24px]
+              text-[34px]
+              font-bold
+              font-extrabold
+              leading-[44px]
               text-[#001640]
+              md:text-[32px]
+              md:leading-[56px]
             "
             initial={{ opacity: 0, y: 40 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -277,7 +297,7 @@ export default function AboutTheForum({
         {/* <div className="relative aspect-[478/460] w-full overflow-hidden rounded-2xl bg-[#f2e9fa]"> */}
         {/* <div className="relative aspect-[478/460] w-full overflow-hidden rounded-2xl"
         > */}
-        <motion.div className="relative aspect-[478/460] w-full overflow-hidden rounded-2xl"
+        {/* <motion.div className="relative aspect-[478/460] w-full overflow-hidden rounded-2xl"
         initial={{ opacity: 0, y: 40 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true, amount: 0.2 }}
@@ -289,6 +309,26 @@ export default function AboutTheForum({
             fill
             sizes="(max-width: 768px) 100vw, 50vw"
             className="object-contain"
+          />
+        </motion.div> */}
+        <motion.div
+          className="block h-full relative aspect-[687/408] w-full overflow-hidden rounded-2xl bg-white"
+          initial={{ opacity: 0, y: 40 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, amount: 0.2 }}
+          transition={{ duration: 0.6 }}
+        >
+          <video
+            key={locale}
+            ref={videoRef}
+            src={isAr ? "/videos/aboutusvideo-1-ar.mp4" : "/videos/aboutusvideo-1-en.mp4"}
+            poster={videoPoster}
+            autoPlay
+            muted
+            loop
+            playsInline
+            preload="auto"
+            className="h-full w-full object-contain"
           />
         </motion.div>
       </div>

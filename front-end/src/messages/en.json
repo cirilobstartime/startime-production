@@ -1126,8 +1126,8 @@
     },
     "abouttheforum": {
       "eyebrow": "About the Forum",
-      "heading": "A Global Saudi Platform Advancing",
-      "heading1": "Dialogue and Cooperation",
+      "heading": "A Global Saudi Platform",
+      "heading1": "Advancing Dialogue and Cooperation",
       "heading2": "in Maritime Security",
       "logoAlt": "Saudi International Maritime Forum",
       "imageAlt": "Delegates at the Saudi International Maritime Forum",
@@ -1251,20 +1251,20 @@
     },
     "latestnews": {
       "eyebrow": "LATEST NEWS",
-      "heading": "Latest News & Articles",
-      "lead": "Stay up to date with the latest news, expert insights, industry developments, and key events shaping the global maritime security landscape.",
+      "heading": "News & Articles",
+      "lead": "Stay Updated on Global Maritime Security",
       "readMoreLabel": "Read More...",
       "viewAllLabel": "View all news"
     },
     "registeryourparticipation": {
       "eyebrow": "Register Your Participation",
-      "heading": "Join the Saudi International Maritime Forum 2026",
+      "heading": "Join the Saudi International Maritime Forum 2026 Newsletter",
       "lead": "Be Part of the Leading Platform Shaping the Future of Global Maritime Security",
       "emailPlaceholder": "Enter Your Email Address",
-      "submitLabel": "Register Now"
+      "submitLabel": "Subscribe to the Newsletter"
     },
     "metrics": {
-      "title": "The 4th Saudi International Maritime Forum",
+      "title": "The Fourth Saudi International Maritime Forum",
       "subtitle": "The Future of Seabed Security and Supply Chains in a Changing Global Environment",
       "cards": [
         {

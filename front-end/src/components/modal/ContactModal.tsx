@@ -44,7 +44,7 @@ export default function ContactModal({
     email: "",
     website: "",
     message: "",
-    attachment: null,
+    attachment: null as File | null,
     });
     const [submitted, setSubmitted] = useState(false);
 
@@ -58,19 +58,52 @@ export default function ContactModal({
       [e.target.name]: e.target.value,
     }));
   };
+  const handleFileChange = (file: File | null) => {
+    setForm((prev) => ({
+        ...prev,
+        attachment: file,
+    }));
+    };
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
 
-    console.log(form);
+    try {
+        const formData = new FormData();
 
-    // validation
-    // call API
+        // Append text fields
+        Object.entries(form).forEach(([key, value]) => {
+        if (key !== "attachment" && value != null) {
+            formData.append(key, value as string);
+        }
+        });
 
-    setSubmitted(true);
+        // Append uploaded file
+        if (form.attachment) {
+        formData.append("attachments", form.attachment);
+        }
 
-  };
+        const res = await fetch("/api/simf-contact-us", {
+        method: "POST",
+        body: formData,
+        });
 
+        if (!res.ok) {
+        const error = await res.text();
+        console.error(`Request failed (${res.status}):`, error);
+        return;
+        }
+
+        const text = await res.text();
+        const data = text ? JSON.parse(text) : null;
+
+        if (data?.success ?? true) {
+        setSubmitted(true);
+        }
+    } catch (err) {
+        console.error("Failed to submit contact form:", err);
+    }
+    };
   return (
     // <Modal
     //   isOpen={isOpen}
@@ -111,12 +144,16 @@ export default function ContactModal({
                     name="name"
                     label={t("name")}
                     placeholder={t("namePlaceholder")}
+                    value={form.name}
+                    onChange={handleChange}
                     />
 
                     <Input
                     name="organization"
                     label={t("organization")}
                     placeholder={t("organizationPlaceholder")}
+                    value={form.organization}
+                    onChange={handleChange}
                     />
                 </div>
 
@@ -126,12 +163,16 @@ export default function ContactModal({
                     name="jobTitle"
                     label={t("jobTitle")}
                     placeholder={t("jobTitlePlaceholder")}
+                    value={form.jobTitle}
+                    onChange={handleChange}
                     />
 
                     <Select
                     name="country"
                     label={t("country")}
                     options={countries}
+                    value={form.country}
+                    onChange={handleChange}
                     />
                 </div>
 
@@ -140,6 +181,8 @@ export default function ContactModal({
                     name="address"
                     label={t("address")}
                     placeholder={t("addressPlaceholder")}
+                    value={form.address}
+                    onChange={handleChange}
                 />
 
                 {/* Row 4 */}
@@ -147,11 +190,15 @@ export default function ContactModal({
                     <PhoneInput
                     name="telephone"
                     label={t("telephone")}
+                    value={form.telephone}
+                    onChange={handleChange}
                     />
 
                     <PhoneInput
                     name="mobile"
                     label={t("mobile")}
+                    value={form.mobile}
+                    onChange={handleChange}
                     />
                 </div>
 
@@ -162,21 +209,34 @@ export default function ContactModal({
                     type="email"
                     label={t("workEmail")}
                     placeholder="example@company.com"
+                    value={form.email}
+                    onChange={handleChange}
                     />
 
                     <Input
                     name="website"
                     label={t("website")}
                     placeholder="https://example.com"
+                    value={form.website}
+                    onChange={handleChange}
                     />
                 </div>
 
                 {/* Row 6 */}
+                {/* <FileUpload
+                    label={t("attachments")}
+                    buttonLabel={t("upload")}
+                    helperText={t("acceptedFormats")}
+                    value={form.attachment}
+                    onChange={handleChange}
+                /> */}
                 <FileUpload
                     label={t("attachments")}
                     buttonLabel={t("upload")}
                     helperText={t("acceptedFormats")}
-                />
+                    value={form.attachment}
+                    onChange={handleFileChange}
+                    />
 
                 {/* Row 7 */}
                 <Textarea
@@ -193,6 +253,8 @@ export default function ContactModal({
                     py-3
                     resize-none
                     "
+                    value={form.message}
+                    onChange={handleChange}
                 />
 
                 {/* Row 8 */}

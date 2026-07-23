@@ -23,7 +23,7 @@ export default function JourneyBanner({ locale }: JourneyBannerProps) {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const baseUrl = "https://startime.sa";
+        const baseUrl = "https://staging.startime.sa";
         const response = await fetch(`${baseUrl}/api/discover-banner-thirds?populate=*`, { cache: 'no-store' });
         const result = await response.json();
         const rawData = result?.data?.[0];

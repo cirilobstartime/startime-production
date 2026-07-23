@@ -3,7 +3,7 @@ import { useState, useEffect } from "react";
 import { useLocale } from "next-intl";
 import { motion, AnimatePresence } from "framer-motion";
 
-const STRAPI_BASE_URL = "https://startime.sa";
+const STRAPI_BASE_URL = "https://staging.startime.sa";
 
 interface GlobePoint {
   id: number;

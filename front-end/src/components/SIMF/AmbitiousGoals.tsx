@@ -171,8 +171,8 @@ export default function AmbitiousGoals({
 
           <p className="w-full max-w-[500px] text-center font-['Noto Kufi Arabic'] text-[18px] leading-8 text-slate-600">
             {isAr
-              ? "قادة وخبراء دوليون لاستشراف مستقبل الأمن البحري"
-              : "International leaders and experts shaping the future of maritime security."}
+              ? "فرصة مواتية لتمكين الشراكات وتعزيز النفاذ إلى منظومات الأمن البحري"
+              : "A Timely Opportunity to Enable Partnerships and Strengthen Access to Maritime Security Ecosystems"}
           </p>
         </div>
 

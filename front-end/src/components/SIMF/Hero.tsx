@@ -92,7 +92,7 @@ export default function Hero({ locale = "en" }: HeroProps) {
       title: "الملتقى البحري السعودي الدولي الرابع",
       subtitle:
         "مستقبل أمن قاع البحار وسلاسل الإمداد في بيئة عالمية متغيرة",
-      date: "23-25 نوفمبر 2026",
+      date: "23–25 نوفمبر 2026",
       location: "فندق ومركز مؤتمرات سوفيتيل الرياض، المملكة العربية السعودية",
       contact: "تواصل معنا",
       sponsor: "كن راعيًا",
@@ -197,7 +197,6 @@ export default function Hero({ locale = "en" }: HeroProps) {
                text-[16px]
                font-bold
                leading-8
-               mt-[-15px]
                text-white ${isAr ? "text-right" : "text-left"}`}
                >
                {heroContent.sub1}
@@ -360,6 +359,7 @@ export default function Hero({ locale = "en" }: HeroProps) {
               type="button"
               onClick={() => setIsContactModalOpen(true)}
                className="
+               hidden
                flex
                h-12
                items-center
@@ -392,12 +392,12 @@ export default function Hero({ locale = "en" }: HeroProps) {
     <motion.div
       className={`
         absolute
-        bottom-[-1.59px]
+        bottom-[0rem]
         h-[502px]
         w-[683px]
         z-[2]
         hidden md:block lg:block
-        ${isAr ? "left-[-59px]" : "right-[-59px]"}
+        ${isAr ? "left-[-85px]" : "right-[-85px]"}
       `}
       initial={{
         opacity: 0,

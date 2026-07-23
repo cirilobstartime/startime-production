@@ -30,7 +30,7 @@ interface LatestNewsProps {
 
 const DEFAULT_ITEMS: NewsItem[] = [
   {
-    category: "Announcement",
+    category: "",
     date: "Jun 2026",
     title:
       "Seabed Security and Maritime Supply Chains in a Critically Changing World",
@@ -68,7 +68,7 @@ const DEFAULT_ITEMS: NewsItem[] = [
 
 const DEFAULT_ITEMS_AR: NewsItem[] = [
   {
-    category: "إعلان",
+    category: "",
     date: "يونيو ٢٠٢٦",
     title: "مستقبل أمن قاع البحار وسلاسل الإمداد في بيئة عالمية متغيرة",
     excerpt:
@@ -172,7 +172,8 @@ export default function LatestNews({
 
   return (
     <>
-    <section dir={isAr ? "rtl" : "ltr"} className="w-full bg-[#faf9fb]" style={{ backgroundColor: "#FAF9FB", background: "linear-gradient(0deg, rgba(230, 242, 251, 0.64), rgba(230, 242, 251, 0.64)), #FFFFFF" }}>
+    {/* <section dir={isAr ? "rtl" : "ltr"} className="w-full bg-[#faf9fb]" style={{ backgroundColor: "#FAF9FB", background: "linear-gradient(0deg, rgba(230, 242, 251, 0.64), rgba(230, 242, 251, 0.64)), #FFFFFF" }}> */}
+    <section dir={isAr ? "rtl" : "ltr"} className="w-full" style={{ background: "linear-gradient(180deg, #EAF2FA 0%, #DCEAF7 100%)" }}>
       <div className="mx-auto max-w-[1440px] px-5 py-20 sm:px-8 md:px-20 md:py-24">
         {/* Header */}
         <motion.div
@@ -245,7 +246,7 @@ export default function LatestNews({
               {/* Body */}
               <div className="flex flex-1 flex-col p-6">
                 <p className="text-xs font-bold uppercase tracking-wider text-[#6b7280]">
-                  {item.category} · {item.date}
+                  {/* {item.category} · {item.date} */} {item.date}
                 </p>
                 <h3 className="mt-4 text-xl font-bold leading-7 text-[#111827]">
                   {item.title}

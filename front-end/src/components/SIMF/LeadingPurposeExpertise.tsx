@@ -42,13 +42,15 @@ const DEFAULT_METRICS: Metric[] = [
   { value: "Under the Supervision of", valueArabic: "تحت اشراف", label: "Ministry of Defense", labelArabic: "وزارة الدفاع", imgSrc: "/sponsors-partners-icon-9.webp", website: "https://mod.gov.sa/en/Pages/default.aspx" },
   { value: "Organized by", valueArabic: "تنظيم", label: "Royal Saudi Naval Forces", labelArabic: "القوات البحرية", imgSrc: "/sponsors-partners-icon-7.webp", website: "https://mod.gov.sa/en/Sectors/Arkan/Navy/Pages/default.aspx" },
   { value: "Licensed to", valueArabic: "مرخص لـ", label: "Startime Ultimate Impact", labelArabic: "ستارتايم ", imgSrc: "/sponsors-partners-icon-8.webp", website: "https://startime.sa/en/" },
-  { value: "Official Contractor", valueArabic: "المقاول الرسمي", label: "Impact Event Production", labelArabic: "امباكت", imgSrc: "/sponsors-partners-icon-5.webp", website: "" },
-  { value: "Event Management Consultant", valueArabic: "استشاري التنظيم", label: "United Advisory Chamber", labelArabic: "يونايتد ", imgSrc: "/sponsors-partners-icon-11.svg", website: "" },
+  { value: "Strategic Partner", valueArabic: "شريك استراتيجي", label: "General Authority for Military Industries", labelArabic: "الهيئة العامة للصناعات العسكرية", imgSrc: "/sponsors-partners-icon-2.webp", website: "https://www.gami.gov.sa/en" },
   { value: "Gold Sponsor", valueArabic: "راعي ذهبي", label: "Navantia", labelArabic: "نافانتيا ", imgSrc: "/sponsors-partners-icon-6.webp", website: "https://www.navantia.es/en/" },
   { value: "Media Partner", valueArabic: "شريك اعلامي", label: "Unmanned Systems Technology", labelArabic: "UST", imgSrc: "/sponsors-partners-icon-3.webp", website: "https://www.unmannedsystemstechnology.com/" },
   { value: "Media Partner", valueArabic: "شريك اعلامي", label: "Defense Advancement", labelArabic: "DA", imgSrc: "/sponsors-partners-icon-4.webp", website: "https://www.defenseadvancement.com/" },
   { value: "Media Partner", valueArabic: "شريك اعلامي", label: "Ocean Science and Technology", labelArabic: "Ocean Science and Technology", imgSrc: "/sponsors-partners-icon-10.webp", website: "https://www.oceansciencetechnology.com/" },
-  { value: "Strategic Partner", valueArabic: "شريك استراتيجي", label: "General Authority for Military Industries", labelArabic: "الهيئة العامة للصناعات العسكرية", imgSrc: "/sponsors-partners-icon-2.webp", website: "https://www.gami.gov.sa/en" },
+  { value: "Official Contractor", valueArabic: "المقاول الرسمي", label: "Impact Event Production", labelArabic: "امباكت", imgSrc: "/sponsors-partners-icon-5.webp", website: "" },
+  { value: "Event Management Consultant", valueArabic: "استشاري التنظيم", label: "United Advisory Chamber", labelArabic: "يونايتد ", imgSrc: "/sponsors-partners-icon-11.svg", website: "" },
+  
+  
 ];
 
 // function CheckCircleIcon() {
@@ -136,7 +138,7 @@ export default function LeadingPurposeExpertise({
           <p className="max-w-[680px] text-center font-['Noto Kufi Arabic'] text-lg leading-8 text-slate-600">
             {/* Lead text */}
            
-            {isAr ? "يحظى الملتقى بدعم ومشاركة جهات حكومية ومؤسسات وطنية ودولية تسهم بخبراتها في تعزيز حضور المملكة ضمن منظومة الأمن البحري العالمي، وتأكيد أهمية العمل المشترك لمواكبة التحولات المتسارعة في هذا القطاع الحيوي." : "The Forum is supported by government entities and national and international organizations whose expertise strengthens Saudi Arabia’s position within the global maritime security landscape and underscores the importance of collective action in responding to the rapid transformations shaping this vital sector."}
+            {isAr ? "يحظى الملتقى بدعم ومشاركة جهات حكومية ومؤسسات وطنية ودولية تسهم بخبراتها في تعزيز حضور المملكة العربية السعودية ضمن منظومة الأمن البحري العالمي، وتأكيد أهمية العمل المشترك لمواكبة التحولات المتسارعة في هذا القطاع الحيوي. " : "The Forum is supported by government entities and national and international organizations whose expertise strengthens the Kingdom of Saudi Arabia’s position within the global maritime security landscape and underscores the importance of collective action in responding to the rapid transformations shaping this vital sector "}
           </p>
         </div>
 

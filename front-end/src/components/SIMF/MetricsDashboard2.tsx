@@ -120,84 +120,6 @@ export default function MetricsSection() {
   });
   const t = useTranslations("SIMF.metrics");
 
-//   const metrics = useMemo<Metric[]>(
-//   () => [
-//     {
-//       value: "1.4M",
-//       title: "Kilometers",
-//       description: "Submarine cable networks",
-//       icon: Cable,
-//     },
-//     {
-//       value: "$19T",
-//       title: "Annual Financial Data",
-//       description: "Flows across the oceans",
-//       icon: Landmark,
-//     },
-//     {
-//       value: "80%",
-//       title: "Global Goods",
-//       description: "Transported by sea",
-//       icon: Ship,
-//     },
-//     {
-//       value: "100M",
-//       title: "Containers",
-//       description: "Processed annually",
-//       icon: Container,
-//     },
-//     {
-//       value: "+350%",
-//       title: "Shipping Cost Growth",
-//       description: "During recent years",
-//       icon: TrendingUp,
-//     },
-//     {
-//       value: "30–50%",
-//       title: "Voyage Delays",
-//       description: "Due to changing marine conditions",
-//       icon: Anchor,
-//     },
-//     {
-//       value: "+50%",
-//       title: "Global Oil Trade",
-//       description: "Moves through maritime routes",
-//       icon: Globe,
-//     },
-//     {
-//       value: "+30%",
-//       title: "LNG Transport",
-//       description: "Moved by sea",
-//       icon: Package,
-//     },
-//     {
-//       value: "900K",
-//       title: "Pipeline Network",
-//       description: "Kilometers worldwide",
-//       icon: Database,
-//     },
-//     {
-//       value: "+400",
-//       title: "Active Subsea Cables",
-//       description: "Connecting continents",
-//       icon: Cable,
-//     },
-//     {
-//       value: "+200%",
-//       title: "Maritime Cyber Threats",
-//       description: "Increase over five years",
-//       icon: Shield,
-//     },
-//     {
-//       value: "300%",
-//       title: "Infrastructure Attacks",
-//       description: "Increase on maritime assets",
-//       icon: TrendingUp,
-//     },
-//   ],
-//   []
-// );
-
 const metrics: Metric[] = [
   {
     value: t("cards.0.value"),
@@ -295,7 +217,7 @@ const [emblaRef, emblaApi] = useEmblaCarousel(
     dragFree: true,
 
     // Keep carousel moving left-to-right.
-    direction: "ltr",
+    direction: isAr ? "rtl" : "ltr",
   },
   [autoScroll.current]
 );
@@ -312,7 +234,7 @@ const [emblaRef, emblaApi] = useEmblaCarousel(
         {/* ================= HEADER ================= */}
 
         <div className="mx-auto mb-12 max-w-3xl text-center">
-          <h2 className="text-4xl font-bold leading-tight text-black lg:text-[2.4rem] lg:leading-normal font-['Noto Kufi Arabic']">
+          <h2 className="text-4xl font-bold leading-tight text-black lg:text-[2.2rem] lg:leading-normal font-['Noto Kufi Arabic']">
             {t("title")}
           </h2>
 
@@ -338,7 +260,11 @@ const [emblaRef, emblaApi] = useEmblaCarousel(
             className="relative overflow-hidden"
             dir="ltr"
           >
-            <div className="flex gap-4 px-4">
+            <div
+              className={`flex gap-4 px-4 ${
+                isAr ? "flex-row-reverse" : "flex-row"
+              }`}
+            >
               {metrics.map((metric) => (
                 <MetricCard
                   key={`${metric.title}-${metric.value}`}
@@ -355,9 +281,9 @@ const [emblaRef, emblaApi] = useEmblaCarousel(
         <div className="mt-12 flex flex-col gap-8 lg:flex-row lg:items-center lg:justify-between">
 
           <p
-            className={`max-w-3xl text-base leading-8 text-[#244A77] font-['Noto_Kufi_Arabic'] text-center lg:text-start`}
+            className={`mx-auto max-w-3xl text-base leading-8 text-[#244A77] font-['Noto_Kufi_Arabic'] text-center whitespace-pre-line`}
           >
-            {isAr ? "يشهد العالم تحولات غير مسبوقة في أمن البحار، ومع تصاعد التهديدات التي تطال سلاسل الإمداد العالمية، يبرز أمن قاع البحار كأولوية دولية ملحة لتعزيز استقرار البحار وضمان استدامة الاقتصاد العالمي" : "The world is witnessing unprecedented transformations in maritime security. As threats to global supply chains intensify, seabed security has emerged as an urgent international priority for strengthening maritime stability and ensuring the sustainability of the global economy."}
+            {isAr ? "يشهد العالم تحولات غير مسبوقة في أمن البحار،\n ومع تصاعد التهديدات التي تطال سلاسل الإمداد العالمية، يبرز أمن قاع البحار كأولوية دولية ملحة لتعزيز استقرار البحار وضمان استدامة الاقتصاد العالمي" : "The world is witnessing unprecedented transformations in maritime security. \nAs threats to global supply chains intensify, seabed security has emerged as an urgent international priority for strengthening maritime stability and ensuring the sustainability of the global economy."}
             
           </p>
 

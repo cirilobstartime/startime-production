@@ -50,21 +50,21 @@ export default function KeyParticipants({
   const moreLabelText = moreLabel ?? t("moreLabel");
   const participantsAr = [
     {
-      image: "/speakers/speaker-1.webp",
+      image: "/speakers/speaker1-1.webp",
       name: "فياض بن حامد الرويلي",
       title: "رئيس هيئة الأركان العامة",
       country: "Saudi Arabia",
       flag: "/flags/SA.svg",
     },
     {
-      image: "/speakers/speaker-2.webp",
+      image: "/speakers/speaker2-1.webp",
       name: "فهد بن عبدالله الغفيلي",
       title: "نائب رئيس هيئة الأركان العامة",
       country: "Saudi Arabia",
       flag: "/flags/SA.svg",
     },
     {
-      image: "/speakers/speaker-3.webp",
+      image: "/speakers/speaker3-1.webp",
       name: "معالي الفريق محمد الغريبي",
       title: "رئيس أركان القوات البحرية الملكية السعودية",
       country: "Saudi Arabia",
@@ -231,13 +231,13 @@ export default function KeyParticipants({
       country: "Pakistan",
       flag: "/flags/PK.svg",
     },
-    {
-      image: "/speakers/2nd-batch/Dr.marios-Pangiotis.webp",
-      name: "د. ماريوس بانجيوتيس",
-      title: "أوصى المعالي بالتواصل معه وقد قبل الدعوة",
-      country: "Greece",
-      flag: "/flags/GR.svg",
-    },
+    // {
+    //   image: "/speakers/2nd-batch/Dr.marios-Pangiotis.webp",
+    //   name: "د. ماريوس بانجيوتيس",
+    //   title: "أوصى المعالي بالتواصل معه وقد قبل الدعوة",
+    //   country: "Greece",
+    //   flag: "/flags/GR.svg",
+    // },
 
 
     {
@@ -321,21 +321,21 @@ export default function KeyParticipants({
 
   const participantsEn = [
     {
-      image: "/speakers/speaker-1.webp",
+      image: "/speakers/speaker1-1.webp",
       name: "Fayyad bin Hamed Al-Ruwaili",
       title: "Chairman of the General Staff",
       country: "Saudi Arabia",
       flag: "/flags/SA.svg",
     },
     {
-      image: "/speakers/speaker-2.webp",
+      image: "/speakers/speaker2-1.webp",
       name: "Fahd bin Abdullah Al-Ghufaili",
       title: "Deputy Chief of the General Staff",
       country: "Saudi Arabia",
       flag: "/flags/SA.svg",
     },
     {
-      image: "/speakers/speaker-3.webp",
+      image: "/speakers/speaker3-1.webp",
       name: "Lieutenant General Mohammed Al-Ghraibi",
       title: "Chief of Staff of the Royal Saudi Naval Forces",
       country: "Saudi Arabia",
@@ -502,13 +502,13 @@ export default function KeyParticipants({
       country: "Pakistan",
       flag: "/flags/PK.svg",
     },
-    {
-      image: "/speakers/2nd-batch/Dr.marios-Pangiotis.webp",
-      name: "Dr. Marios-Pangiotis ",
-      title: "Recommended by His Excellency to be contacted and has accepted the invitation",
-      country: "Greece",
-      flag: "/flags/GR.svg",
-    },
+    // {
+    //   image: "/speakers/2nd-batch/Dr.marios-Pangiotis.webp",
+    //   name: "Dr. Marios-Pangiotis ",
+    //   title: "Recommended by His Excellency to be contacted and has accepted the invitation",
+    //   country: "Greece",
+    //   flag: "/flags/GR.svg",
+    // },
 
 
     {
@@ -690,7 +690,8 @@ export default function KeyParticipants({
                       <div className="absolute inset-x-0 bottom-0 h-1/2 bg-gradient-to-t from-[#244A77] via-[#244A77]/60 to-transparent" />
 
                       <div className="absolute bottom-6 left-1/2 z-10 w-[254px] -translate-x-1/2 rounded-lg bg-[linear-gradient(0deg,rgba(232,192,96,0.12),rgba(232,192,96,0.12)),linear-gradient(111.96deg,rgba(255,255,255,0.8)_2.19%,rgba(217,235,249,0.8)_97.74%)] p-4 backdrop-blur-[17px] transition-all duration-300 group-hover:-translate-y-1 group-hover:backdrop-blur-xl">
-                        <div className={`flex flex-col gap-3 ${isAr ? "items-end text-right" : "items-start text-left"}`}>
+                        {/* <div className={`flex flex-col gap-3 ${isAr ? "items-end text-right" : "items-start text-left"}`}> */}
+                        <div className="flex flex-col items-center gap-3 text-center">
                           <h3 className="font-['Noto Kufi Arabic'] text-base font-bold text-[#333333]">
                             {participant.name}
                           </h3>
@@ -699,7 +700,8 @@ export default function KeyParticipants({
                             {participant.title}
                           </p>
 
-                          <div className={`flex items-center gap-3 ${isAr ? "flex-row-reverse" : ""}`}>
+                          {/* <div className={`flex items-center gap-3 ${isAr ? "flex-row-reverse" : ""}`}> */}
+                          <div className="flex items-center justify-center gap-3">
                             <Image
                               src={participant.flag}
                               alt={participant.country}
@@ -707,7 +709,7 @@ export default function KeyParticipants({
                               height={16}
                             />
 
-                            <span className="font-['Noto Kufi Arabic'] text-xs text-[#333333]">
+                            <span className="hidden font-['Noto Kufi Arabic'] text-xs text-[#333333]">
                               {participant.country}
                             </span>
                           </div>

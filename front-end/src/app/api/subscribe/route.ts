@@ -1,11 +1,25 @@
 import { NextRequest, NextResponse } from "next/server";
 
 export async function POST(req: NextRequest) {
-  const formData = await req.formData();
+
+  console.log("EMAIL_BASE_URL:", process.env.EMAIL_BASE_URL);
+  // const formData = await req.formData();
+
+  // const res = await fetch(`${process.env.EMAIL_BASE_URL}/api/subscribe`, {
+  //   method: "POST",
+  //   body: formData,
+  // });
+
+  /** try */
+  const incoming = await req.formData();
+  const outgoing = new FormData();
+  for (const [key, value] of incoming.entries()) {
+    outgoing.append(key, value);
+  }/** end of try */
 
   const res = await fetch(`${process.env.EMAIL_BASE_URL}/api/subscribe`, {
     method: "POST",
-    body: formData,
+    body: outgoing,
   });
 
   //const data = await res.json();

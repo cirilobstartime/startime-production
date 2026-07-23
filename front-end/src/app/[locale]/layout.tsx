@@ -95,9 +95,10 @@ export default async function LocaleLayout({
           <main>{children}</main>
           <Footer/>
         </IntlProvider>
-        <GoogleTagManager
+        {/* <GoogleTagManager
           gtmId={process.env.NEXT_PUBLIC_GTM_ID!}
-        />
+        /> */}
+        <GoogleTagManager gtmId="GTM-MLG4X755" />
       </body>
     </html>
   );

@@ -10,7 +10,7 @@ import "swiper/css";
 import Image from "next/image";
 import MoveRightButton from "../MoveRightButton";
 
-const STRAPI_BASE_URL = "https://startime.sa";
+const STRAPI_BASE_URL = "https://staging.startime.sa";
 
 interface GovernanceCard {
     id: number;

@@ -9,6 +9,7 @@ interface FileUploadProps {
   buttonLabel: string;
   helperText: string;
   accept?: string;
+  value?: File | null;
   onChange?: (file: File | null) => void;
 }
 
@@ -17,6 +18,7 @@ export default function FileUpload({
   buttonLabel,
   helperText,
   accept = ".pdf,.jpg,.jpeg,.png",
+  value,
   onChange,
 }: FileUploadProps) {
   const locale = useLocale();

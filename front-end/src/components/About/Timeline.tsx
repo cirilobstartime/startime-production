@@ -17,7 +17,7 @@ interface TimelineSectionProps {
 export default function TimelineSection({ locale }: TimelineSectionProps) {
   const t = useTranslations("AboutPage");
   const isAr = locale === "ar";
-  const baseUrl = "https://startime.sa";
+  const baseUrl = "https://staging.startime.sa";
 
   const [timelineItems, setTimelineItems] = useState<TimelineElement[]>([]);
   const [ambition, setAmbition] = useState<any>(null);

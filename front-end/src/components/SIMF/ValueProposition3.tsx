@@ -7,13 +7,13 @@ interface ValuePropositionProps {
 
 const valueItems = [
   {
-    image: "/valueproposition3-img1.webp",
+    image: "/valueproposition3-img2.webp",
     title: "أمن قاع البحار والبنية التحتية الرقمية",
     description:
       "استعراض تحديات حماية الكابلات البحرية والأنظمة الرقمية في الأعماق، وتعزيز الأمن السيبراني البحري، ودور الدول في حماية الاقتصاد الرقمي العالمي المعتمد على البنية التحتية تحت سطح البحر.",
   },
   {
-    image: "/valueproposition3-img2.webp",
+    image: "/valueproposition3-img1.webp",
     title: "سلاسل الإمداد البحرية والبنية التحتية اللوجستية",
     description:
       "بحث مستقبل التجارة البحرية ورفع مرونة سلاسل الإمداد وتعزيز كفاءة الموانئ والممرات البحرية عبر التقنيات الحديثة لضمان استدامة تدفق السلع عالميًا.",
@@ -28,13 +28,13 @@ const valueItems = [
 
 const valueItemsEn = [
   {
-    image: "/valueproposition3-img1.webp",
+    image: "/valueproposition3-img2.webp",
     title: "Seabed Security and Digital Infrastructure",
     description:
       "Examining the challenges of protecting subsea cables and digital infrastructure, strengthening maritime cybersecurity, and highlighting the role of nations in safeguarding the global digital economy, which relies on subsea infrastructure.",
   },
   {
-    image: "/valueproposition3-img2.webp",
+    image: "/valueproposition3-img1.webp",
     title: "Maritime Supply Chain Security and Logistics Infrastructure",
     description:
       "Exploring the future of maritime trade, strengthening supply chain resilience, and enhancing the efficiency of ports and maritime corridors through advanced technologies to ensure the sustainable global flow of goods.",
@@ -59,8 +59,8 @@ export default function ValueProposition({
       : "Forum Program";
 
     const description = isAr
-      ? "تعزيز منظومة الأمن البحري بما يدعم الجهود الدولية لحماية قاع البحار ورفع كفاءة سلاسل إمداد الطاقة والتجارة والمساهمة في تحقيق استقرار الاقتصاد العالمي."
-      : "Strengthening the maritime security ecosystem by supporting international efforts to safeguard the seabed, enhance the efficiency of energy and trade supply chains, and contribute to global economic stability.";
+      ? "تعزيز منظومة الأمن البحري بما يدعم الجهود الدولية لحماية قاع البحار ورفع كفاءة سلاسل إمداد الطاقة والتجارة والمساهمة في تحقيق استقرار الاقتصاد العالمي"
+      : "Strengthening the maritime security ecosystem by supporting international efforts to safeguard the seabed, enhance the efficiency of energy and trade supply chains, and contribute to global economic stability";
 
   return (
     <section

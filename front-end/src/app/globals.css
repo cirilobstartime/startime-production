@@ -236,7 +236,7 @@ html[lang="ar"] body {
 /* For Hero Section */
 @media (min-width: 768px) {   
     .herotextdiv{
-      padding-bottom: 15rem !important;
+      padding-bottom: 11rem !important;
     }
 }
 .spanpatronage{
@@ -268,38 +268,10 @@ html[lang="ar"] body {
 
 /* end of For Banner Video Section */
 
-/* For Become A Partner Section */
-.becomeapartnerbtn, .becomeapartnerbtn:hover{
-  border-radius: var(--Collection-Radius-pill, 999px);
-  background: var(--color-violet-38, #5B4180);
+.text-\[\#5A417F\]{
+  color: rgb(187 155 236);
 }
 
-.joinnowbtn, .joinnowbtn:hover{
-  border-radius: var(--Collection-Radius-pill, 999px);
-  background: var(--Colors-Yallow-Normal, #4B5563);
-  color: #FFFFFF;
+html {
+  scroll-behavior: smooth;
 }
-/* end of For Become A Partner Section */
-
-/* For Leading with Purpose and Expertise Section */
-.startimelinksdiv{
-  display: flex;
-  width: 1280px;
-  height: 144px;
-  justify-content: center;
-  align-items: center;
-}
-/* end For Leading with Purpose and Expertise Section */
-
-/* For Services section */
-.servicesection{
-  background: linear-gradient(125.49deg, #193050 -0.01%, #396F9B 99.99%);
-}
-/* end of For Services section */
-
-/* For Value Proposition 1 */
-.b2g-container{
-  background: linear-gradient(125.49deg, #193050 -0.01%, #396F9B 99.99%);
-  border-radius: 32px;
-}
-/* end For Value Proposition 1 */

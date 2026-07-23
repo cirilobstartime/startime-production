@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState } from "react";
+import React, { useState, useRef } from "react";
 import { useTranslations } from "next-intl";
 
 /**
@@ -56,12 +56,12 @@ function PhoneIcon() {
 
 const DEFAULT_CONTACTS: ContactItem[] = [
   { Icon: PinIcon, label: "Riyadh 12341 3507" },
-  { Icon: PhoneIcon, label: "+966510100155", href: "tel:+966510100155" },
+  { Icon: PhoneIcon, label: "+966920010500", href: "tel:+966920010500" },
   { Icon: MailIcon, label: "sim@startime.sa", href: "mailto:sim@startime.sa" },
 ];
 const DEFAULT_CONTACTS_AR: ContactItem[] = [
-  { Icon: PinIcon, label: "الرياض ١٢٣٤١، ص.ب ٣٥٠٧" },
-  { Icon: PhoneIcon, label: "+966510100155", href: "tel:+966510100155" },
+  
+  { Icon: PhoneIcon, label: "+966920010500", href: "tel:+966920010500" },
   { Icon: MailIcon, label: "sim@startime.sa", href: "mailto:sim@startime.sa" },
 ];
 
@@ -88,9 +88,58 @@ export default function RegisterYourParticipation({
 
   const [email, setEmail] = useState("");
 
-  const handleSubmit = (e: React.FormEvent) => {
+  // const handleSubmit = (e: React.FormEvent) => {
+  //   e.preventDefault();
+  //   onSubmitEmail?.(email);
+  // };
+
+  const [status, setStatus] = useState<
+    "idle" | "loading" | "success" | "error"
+  >("idle");
+  const [errors, setErrors] = useState<{ [key: string]: string }>({});
+  const [selectedFiles, setSelectedFiles] = useState<File[]>([]);
+
+  const formRef = useRef<HTMLFormElement>(null);
+
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    onSubmitEmail?.(email);
+    if (!formRef.current) return;
+
+    const formData = new FormData(formRef.current);
+    //console.log(Object.fromEntries(formData.entries()));
+    const newErrors: { [key: string]: string } = {};
+    //console.log(formData);
+    const requiredFields = ["email"];
+
+    requiredFields.forEach((field) => {
+      if (!formData.get(field)) {
+        if (t.has(`fields.required`)) {
+          newErrors[field] = t(`fields.required`);
+        } else {
+          newErrors[field] =
+            locale === "ar" ? "هذا الحقل مطلوب" : "This field is required";
+        }
+      }
+    });
+
+    if (Object.keys(newErrors).length > 0) {
+      setErrors(newErrors);
+      return;
+    }
+
+    setErrors({});
+    setStatus("loading");
+
+    try {
+      const res = await fetch("/api/subscribe", {
+        method: "POST",
+        body: formData,
+      });
+      const data = await res.json();
+      setStatus(data.success ? "success" : "error");
+    } catch {
+      setStatus("error");
+    }
   };
 
   return (
@@ -126,7 +175,7 @@ export default function RegisterYourParticipation({
 
           {/* Content */}
           <div className="relative mx-auto flex max-w-3xl flex-col items-center text-center">
-            <p className="text-xs font-bold uppercase tracking-[0.15em] text-[#5a4280]">
+            <p className="hidden text-xs font-bold uppercase tracking-[0.15em] text-[#5a4280]">
               {eyebrowText}
             </p>
             <h2 className="mt-4 text-3xl font-bold leading-tight text-black md:text-[40px] md:leading-[1.15]">
@@ -138,6 +187,7 @@ export default function RegisterYourParticipation({
 
             {/* Email form */}
             <form
+              ref={formRef}
               onSubmit={handleSubmit}
               className="mt-8 flex w-full max-w-md flex-col items-stretch gap-2 rounded-full bg-white p-1.5 shadow-sm sm:flex-row sm:items-center"
             >
@@ -147,6 +197,7 @@ export default function RegisterYourParticipation({
                 </span>
                 <input
                   type="email"
+                  name="email"
                   required
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
@@ -154,6 +205,25 @@ export default function RegisterYourParticipation({
                   className="w-full bg-transparent py-2 text-sm outline-none placeholder:text-[#9aa2b1]"
                 />
               </label>
+              {status === "success" && (
+                <p className="text-green-700 font-bold text-center">
+                  {t.has("fields.successMessage")
+                    ? "You are now subscribed to our newsletter!"
+                    : locale === "ar"
+                      ? "لقد اشتركت الآن في نشرتنا الإخبارية!"
+                      : "You are now subscribed to our newsletter!"}
+                </p>
+              )}
+
+              {status === "error" && (
+                <p className="text-red-600 font-bold text-center">
+                  {t.has("fields.errorMessage")
+                    ? t("fields.errorMessage")
+                    : locale === "ar"
+                      ? "حدث خطأ"
+                      : "An error occurred"}
+                </p>
+              )}
               <button
                 type="submit"
                 className="shrink-0 rounded-full bg-[#001640] px-6 py-2.5 text-sm font-bold text-white transition-colors hover:bg-[#0a2559]"

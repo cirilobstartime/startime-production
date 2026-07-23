@@ -25,7 +25,7 @@ export default function MissionSection({ locale }: MissionSectionProps) {
   useEffect(() => {
     const fetchBanner = async () => {
       try {
-        const baseUrl = "https://startime.sa";
+        const baseUrl = "https://staging.startime.sa";
         const apiUrl = `${baseUrl}/api/discover-second-banners?populate=*&locale=${locale}`;
 
         const response = await fetch(apiUrl, { cache: 'no-store' });

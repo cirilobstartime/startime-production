@@ -78,10 +78,24 @@ export default function NewsSection({ locale }: NewsSectionProps) {
     };
   }
 
-  function getImageUrl(item: NewsItem): string {
-    const imageUrl = item.main_image?.url;
-    if (!imageUrl) return "/image6.png";
+  /*function getImageUrl(item: NewsItem): string {
+    //const imageUrl = item.main_image?.url;
+    const imageUrl = item?.main_image?.url
+  ? `${STRAPI_URL}${item.main_image.url}`
+  : "/image6.png";
+
     return `${STRAPI_URL}${imageUrl}`;
+  }*/
+  function getImageUrl(item: NewsItem): string {
+    const url = item?.main_image?.url;
+
+    if (!url) return "/image6.png";
+
+    // already absolute URL from Strapi
+    if (url.startsWith("http")) return url;
+
+    // relative URL from Strapi
+    return `${STRAPI_URL}${url}`;
   }
 
   if (loading) {

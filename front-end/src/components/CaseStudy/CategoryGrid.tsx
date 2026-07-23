@@ -6,7 +6,7 @@ import Image from "next/image";
 import { motion } from "framer-motion";
 import Link from "next/link";
 
-const STRAPI_BASE_URL = "https://startime.sa";
+const STRAPI_BASE_URL = "https://cms-staging.startime.sa";
 
 interface Project {
   id: number;

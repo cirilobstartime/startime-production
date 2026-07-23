@@ -6,6 +6,8 @@ import WorkSection from "@/components/home/WorkSection";
 import TeamSection from "@/components/home/TeamSection";
 import NewsSection from "@/components/home/NewsSection";
 import type { Metadata } from "next";
+import MaritimeHero from "@/components/SimfHero/SimfHero";
+import UfiSection from "@/components/UfiSection";
 
 
 interface PageProps {
@@ -49,7 +51,16 @@ const Page = async ({ params }: PageProps) => {
 
   return (
     <main>
+      {/* temporary hero section */}
+      {/* <MaritimeHero/> */}
+
+      {/* this is the original Hero Section */}
       <HeroSection locale={locale} />
+
+      {/* this is the section for UFI logo  */}
+      <UfiSection locale={locale} />
+
+      {/* the rest of the sections are original */}
       <BenefitsSection locale={locale} />
       <WhyChooseSection locale={locale} />
       <WorkSection locale={locale} />
