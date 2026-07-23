@@ -51,22 +51,22 @@ export default function KeyParticipants({
   const participantsAr = [
     {
       image: "/speakers/speaker1-1.webp",
-      name: "فياض بن حامد الرويلي",
+      name: "معالي الفريق الأول الركن فياض بن حامد الرويلي",
       title: "رئيس هيئة الأركان العامة",
       country: "Saudi Arabia",
       flag: "/flags/SA.svg",
     },
     {
-      image: "/speakers/speaker2-1.webp",
-      name: "فهد بن عبدالله الغفيلي",
-      title: "نائب رئيس هيئة الأركان العامة",
+      image: "/speakers/speaker3-1.webp",
+      name: "معالي الفريق الركن محمد بن عبدالرحمن الغريبي",
+      title: "رئيس أركان القوات البحرية الملكية السعودية",
       country: "Saudi Arabia",
       flag: "/flags/SA.svg",
     },
     {
-      image: "/speakers/speaker3-1.webp",
-      name: "معالي الفريق محمد الغريبي",
-      title: "رئيس أركان القوات البحرية الملكية السعودية",
+      image: "/speakers/speaker2-1.webp",
+      name: "معالي الفريق الركن فهد بن عبدالله الغفيلي",
+      title: "نائب رئيس هيئة الأركان العامة",
       country: "Saudi Arabia",
       flag: "/flags/SA.svg",
     },
@@ -322,25 +322,26 @@ export default function KeyParticipants({
   const participantsEn = [
     {
       image: "/speakers/speaker1-1.webp",
-      name: "Fayyad bin Hamed Al-Ruwaili",
-      title: "Chairman of the General Staff",
-      country: "Saudi Arabia",
-      flag: "/flags/SA.svg",
-    },
-    {
-      image: "/speakers/speaker2-1.webp",
-      name: "Fahd bin Abdullah Al-Ghufaili",
-      title: "Deputy Chief of the General Staff",
+      name: "His Excellency General Fayyadh bin Hamed Al-Ruwaili",
+      title: "Chief of the General Staff",
       country: "Saudi Arabia",
       flag: "/flags/SA.svg",
     },
     {
       image: "/speakers/speaker3-1.webp",
-      name: "Lieutenant General Mohammed Al-Ghraibi",
+      name: "His Excellency Lieutenant General Mohammed bin Abdulrahman Al-Gharibi",
       title: "Chief of Staff of the Royal Saudi Naval Forces",
       country: "Saudi Arabia",
       flag: "/flags/SA.svg",
     },
+    {
+      image: "/speakers/speaker2-1.webp",
+      name: "His Excellency Lieutenant General Fahd bin Abdullah Al-Ghofaily",
+      title: "Vice Chief of the General Staff",
+      country: "Saudi Arabia",
+      flag: "/flags/SA.svg",
+    },
+    
 
 
     {
