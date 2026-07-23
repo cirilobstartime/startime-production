@@ -52,10 +52,10 @@ const Page = async ({ params }: PageProps) => {
   return (
     <main>
       {/* temporary hero section */}
-      {/* <MaritimeHero/> */}
+      <MaritimeHero/>
 
       {/* this is the original Hero Section */}
-      <HeroSection locale={locale} />
+      {/* <HeroSection locale={locale} /> */}
 
       {/* this is the section for UFI logo  */}
       <UfiSection locale={locale} />

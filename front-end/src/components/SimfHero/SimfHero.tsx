@@ -161,7 +161,12 @@ export default function SimfHero({
         </Link>
       </div>
 
-      <div className={styles.infoBarWrap}>
+      {/* <div className={styles.infoBarWrap}> */}
+      <div
+        className={`${styles.infoBarWrap} ${
+          isRTL ? "pr-[50px]!" : "pl-[50px]!"
+        }`}
+      >
         <div className={styles.infoBar}>
           {t.info.map((item) => (
             <div

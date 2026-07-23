@@ -260,7 +260,7 @@ export default function Hero({ locale = "en" }: HeroProps) {
             </p>
          </motion.div>
          {/* Meta */}
-         <motion.div
+          <motion.div
             className="w-full 
             flex
             items-center
@@ -275,43 +275,40 @@ export default function Hero({ locale = "en" }: HeroProps) {
             >
             {/* Date */}
             <div
-               className={`flex items-center gap-2 ${
-                  isAr ? "flex-row-reverse" : "flex-row"
+              className={`flex items-center gap-2 ${
+                isAr ? "flex-row-reverse" : "flex-row"
+              }`}
+            >
+              <span
+                className={`w-full font-['Noto_Kufi_Arabic'] text-[14px] font-bold leading-4 text-white ${
+                  isAr ? "order-1 text-right" : "order-2 text-left"
                 }`}
-               >
-               <span
-                  className={`w-full font-['Noto Kufi Arabic']
-                  text-[14px]
-                  font-bold
-                  leading-4
-                  text-white ${isAr ? "text-right" : "text-left"}`}
-                  >
-               {heroContent.date}
-               </span>
-               <Calendar
-                  className="h-4 w-4 text-[#E8C060]"
-                  />
+              >
+                {heroContent.date}
+              </span>
+              <Calendar  className={`h-4 w-4 text-[#E8C060] ${
+                isAr ? "order-2" : "order-1"
+              }`} />
             </div>
+
             {/* Location */}
             <div
-               className={`flex items-center gap-2 ${
-                  isAr ? "flex-row-reverse" : "flex-row"
+              className={`flex items-center gap-2 ${
+                isAr ? "flex-row-reverse" : "flex-row"
+              }`}
+            >
+              <span
+                className={`font-['Noto_Kufi_Arabic'] text-[14px] font-bold leading-4 text-white ${
+                  isAr ? "order-1 text-right" : "order-2 text-left"
                 }`}
-               >
-               <span
-                  className={`font-['Noto Kufi Arabic']
-                  text-[14px]
-                  font-bold
-                  leading-4
-                  text-white ${isAr ? "text-right" : "text-left"}`}
-                  >
-               {heroContent.location}
-               </span>
-               <MapPin
-                  className="h-4 w-4 text-[#E8C060]"
-                  />
+              >
+                {heroContent.location}
+              </span>
+              <MapPin className={`h-4 w-4 text-[#E8C060] ${
+                isAr ? "order-2" : "order-1"
+              }`}  />
             </div>
-         </motion.div>
+          </motion.div>
          {/* CTA Row */}
          <motion.div
             className="w-full 
