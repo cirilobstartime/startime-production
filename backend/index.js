@@ -225,6 +225,8 @@ app.post(
   "/api/subscribe",
   upload.none(),
   async (req, res) => {
+  // console.log('headasdsadas'+req.headers["content-type"]);
+  // console.log('boydddd'+req.body);
     const { email } = req.body;
 
     const mailOptions = {
@@ -249,6 +251,57 @@ app.post(
     }
   }
 );
+
+
+
+// ══════════════════════════════════════════════════════════════════════════════
+// POST /api/simf-contact-us
+// Fields: name, organization, jobTitle, country, address, telephone, mobile, email, website, message
+// Files:  attachments (multiple)
+// ══════════════════════════════════════════════════════════════════════════════
+app.post(
+  "/api/simf-contact-us",
+  upload.array("attachments", 10),
+  async (req, res) => {
+    const { name, organization, jobTitle, country, address, telephone, mobile, email, website, message } = req.body;
+
+    const attachments = buildAttachments(req.files || []);
+    const simemail = "sim@startime.sa";
+
+    const mailOptions = {
+      from: `"Startime - Saudi International Maritime Forum Contact Us" <${process.env.SMTP_USER}>`,
+      // to: process.env.CONTACT_TO_EMAIL,
+      to: simemail,
+      replyTo: email,
+      subject: `New Inquiry for Saudi International Maritime Forum — ${name} (${organization})`,
+      html: `
+        <h2>New Inquiry for Saudi International Maritime Forum Form Submission</h2>
+        <table cellpadding="8" style="border-collapse:collapse;width:100%;max-width:600px">
+          <tr><td><strong>Name</strong></td><td>${name}</td></tr>
+          <tr><td><strong>Organization</strong></td><td>${organization}</td></tr>
+          <tr><td><strong>Job Title</strong></td><td>${jobTitle}</td></tr>
+          <tr><td><strong>Country</strong></td><td>${country}</td></tr>
+          <tr><td><strong>Address</strong></td><td>${address}</td></tr>
+          <tr><td><strong>Telephone</strong></td><td>${telephone}</td></tr>
+          <tr><td><strong>Mobile</strong></td><td>${mobile}</td></tr>
+          <tr><td><strong>Email</strong></td><td><a href="mailto:${email}">${email}</a></td></tr>
+          <tr><td><strong>Website</strong></td><td>${website}</td></tr>
+          <tr><td><strong>Message</strong></td><td style="white-space:pre-wrap">${message}</td></tr>
+        </table>
+      `,
+      attachments,
+    };
+
+    try {
+      await transporter.sendMail(mailOptions);
+      res.json({ success: true, message: "Message sent successfully." });
+    } catch (err) {
+      console.error("Discover Us mail error:", err);
+      res.status(500).json({ success: false, message: "Failed to send email." });
+    }
+  }
+);
+
 
 // ── Start ───────────────────────────────────────────────────────────────────
 app.listen(PORT, () => {
