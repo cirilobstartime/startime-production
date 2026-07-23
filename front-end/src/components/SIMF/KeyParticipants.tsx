@@ -689,30 +689,69 @@ export default function KeyParticipants({
 
                       <div className="absolute inset-x-0 bottom-0 h-1/2 bg-gradient-to-t from-[#244A77] via-[#244A77]/60 to-transparent" />
 
-                      <div className="absolute bottom-6 left-1/2 z-10 w-[254px] -translate-x-1/2 rounded-lg bg-[linear-gradient(0deg,rgba(232,192,96,0.12),rgba(232,192,96,0.12)),linear-gradient(111.96deg,rgba(255,255,255,0.8)_2.19%,rgba(217,235,249,0.8)_97.74%)] p-4 backdrop-blur-[17px] transition-all duration-300 group-hover:-translate-y-1 group-hover:backdrop-blur-xl">
-                        {/* <div className={`flex flex-col gap-3 ${isAr ? "items-end text-right" : "items-start text-left"}`}> */}
-                        <div className="flex flex-col items-center gap-3 text-center">
-                          <h3 className="font-['Noto Kufi Arabic'] text-base font-bold text-[#333333]">
+                      <div
+                        className="
+                          absolute
+                          bottom-6
+                          left-1/2
+                          z-10
+                          w-[254px]
+                          !h-[160px]
+                          -translate-x-1/2
+                          rounded-lg
+                          bg-[linear-gradient(0deg,rgba(232,192,96,0.12),rgba(232,192,96,0.12)),linear-gradient(111.96deg,rgba(255,255,255,0.8)_2.19%,rgba(217,235,249,0.8)_97.74%)]
+                          p-4
+                          backdrop-blur-[17px]
+                          transition-all
+                          duration-300
+                          group-hover:-translate-y-1
+                          group-hover:backdrop-blur-xl
+                        "
+                      >
+                        {/* Flag */}
+                        <div
+                          className={`absolute top-4 ${
+                            isAr ? "right-4" : "left-4"
+                          }`}
+                        >
+                          <Image
+                            src={participant.flag}
+                            alt={participant.country}
+                            width={22}
+                            height={16}
+                          />
+                        </div>
+
+                        {/* Text */}
+                        <div className="flex h-full flex-col items-center justify-center gap-3 pt-4 text-center">
+                          <h3
+                            className="
+                              w-full
+                              max-w-[200px]
+                              break-words
+                              whitespace-normal
+                              font-['Noto Kufi Arabic']
+                              text-base
+                              font-bold
+                              text-[#333333]
+                            "
+                          >
                             {participant.name}
                           </h3>
 
-                          <p className="font-['Noto Kufi Arabic'] text-sm text-[#376B8E]">
+                          <p
+                            className="
+                              w-full
+                              max-w-[200px]
+                              break-words
+                              whitespace-normal
+                              font-['Noto Kufi Arabic']
+                              text-sm
+                              text-[#376B8E]
+                            "
+                          >
                             {participant.title}
                           </p>
-
-                          {/* <div className={`flex items-center gap-3 ${isAr ? "flex-row-reverse" : ""}`}> */}
-                          <div className="flex items-center justify-center gap-3">
-                            <Image
-                              src={participant.flag}
-                              alt={participant.country}
-                              width={22}
-                              height={16}
-                            />
-
-                            <span className="hidden font-['Noto Kufi Arabic'] text-xs text-[#333333]">
-                              {participant.country}
-                            </span>
-                          </div>
                         </div>
                       </div>
                     </div>
@@ -810,6 +849,7 @@ export default function KeyParticipants({
 
           
         </div>
+        
       </div>
     </section>
   );

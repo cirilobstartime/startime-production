@@ -39,8 +39,8 @@ interface MetricsDashboardProps {
 const DEFAULT_METRICS: Metric[] = [
   // { value: "1.4M km", label: "SAMI", imgSrc: "/sponsors-partners-icon-1.webp" },
 
-  { value: "Under the Supervision of", valueArabic: "تحت اشراف", label: "Ministry of Defense", labelArabic: "وزارة الدفاع", imgSrc: "/sponsors-partners-icon-9.webp", website: "https://mod.gov.sa/en/Pages/default.aspx" },
-  { value: "Organized by", valueArabic: "تنظيم", label: "Royal Saudi Naval Forces", labelArabic: "القوات البحرية", imgSrc: "/sponsors-partners-icon-7.webp", website: "https://mod.gov.sa/en/Sectors/Arkan/Navy/Pages/default.aspx" },
+  // { value: "Under the Supervision of", valueArabic: "تحت اشراف", label: "Ministry of Defense", labelArabic: "وزارة الدفاع", imgSrc: "/sponsors-partners-icon-9.webp", website: "https://mod.gov.sa/en/Pages/default.aspx" },
+  // { value: "Organized by", valueArabic: "تنظيم", label: "Royal Saudi Naval Forces", labelArabic: "القوات البحرية", imgSrc: "/sponsors-partners-icon-7.webp", website: "https://mod.gov.sa/en/Sectors/Arkan/Navy/Pages/default.aspx" },
   { value: "Licensed to", valueArabic: "مرخص لـ", label: "Startime Ultimate Impact", labelArabic: "ستارتايم ", imgSrc: "/sponsors-partners-icon-8.webp", website: "https://startime.sa/en/" },
   { value: "Strategic Partner", valueArabic: "شريك استراتيجي", label: "General Authority for Military Industries", labelArabic: "الهيئة العامة للصناعات العسكرية", imgSrc: "/sponsors-partners-icon-2.webp", website: "https://www.gami.gov.sa/en" },
   { value: "Gold Sponsor", valueArabic: "راعي ذهبي", label: "Navantia", labelArabic: "نافانتيا ", imgSrc: "/sponsors-partners-icon-6.webp", website: "https://www.navantia.es/en/" },
@@ -114,8 +114,11 @@ export default function LeadingPurposeExpertise({
         // background:
         //   "linear-gradient(125deg, #f7f4fb 0%, #faf9fc 45%, #f3e6fb 100%)",
         backgroundColor: "rgb(237, 245, 247)"
+        //background: "linear-gradient(#080c18b8 0%, #0a0f1e73 45%, #080c18c7 100%)",
+        //background: "linear-gradient(#080c18b8 0%, #0a0f1e73 45%, #080c18c7 100%)", position: "absolute", inset: "0"
       }}
     >
+      
       <div className="mx-auto max-w-[1440px] py-20 md:py-24">
         {/* Header */}
         <div className="hidden mx-auto flex max-w-3xl flex-col items-center px-5 text-center sm:px-8">
@@ -129,6 +132,54 @@ export default function LeadingPurposeExpertise({
             {leadText}
           </p>
         </div>
+
+        {/* new position of logos */}
+        {/* new  */}
+        {/* Supervising & Organizing Organizations */}
+        <div className="mb-12 flex flex-col items-center gap-8 md:flex-row md:justify-center md:gap-24">
+
+          {/* Supervised by */}
+          <div className="flex flex-col items-center">
+            <p className="mb-3 text-sm font-medium text-gray-500">
+              {isAr ? "تحت اشراف" : "Under the Supervision of"}
+            </p>
+
+            <a
+              href="..."
+              target="_blank"
+              rel="noopener noreferrer"
+              className="transition-transform duration-300 hover:scale-105 rounded-[10px] text-black"
+            >
+              <img
+                src="/sponsors-partners-icon-9.webp"
+                alt="Under the Supervision of"
+                className="h-[6rem] w-auto object-contain"
+              />
+            </a>
+          </div>
+
+          {/* Organized by */}
+          <div className="flex flex-col items-center">
+            <p className="mb-3 text-sm font-medium text-gray-500">
+              {isAr ? "تنظيم" : "Organized by"}
+            </p>
+
+            <a
+              href="..."
+              target="_blank"
+              rel="noopener noreferrer"
+              className="transition-transform duration-300 hover:scale-105  rounded-[10px] text-black"
+            >
+              <img
+                src="/sponsors-partners-icon-7.webp"
+                alt="Organized By"
+                className="h-[6rem] w-auto object-contain"
+              />
+            </a>
+          </div>
+
+        </div>
+
         <div className="mx-auto flex max-w-3xl flex-col items-center px-5 text-center sm:px-8">
           {/* Heading */}
           <h2 className="max-w-[720px] text-center font-['Noto Kufi Arabic'] text-[40px] font-bold leading-[45px] text-black">
@@ -136,7 +187,7 @@ export default function LeadingPurposeExpertise({
             {isAr ? "الشركاء والرعاة" : "Partners and Sponsors"}
           </h2>
           {/* Description */}
-          <p className="max-w-[680px] text-center font-['Noto Kufi Arabic'] text-lg leading-8 text-slate-600">
+          <p className="max-w-[680px] text-center font-['Noto Kufi Arabic'] text-lg leading-8 text-slate-600 text-black">
             {/* Lead text */}
            
             {isAr ? "يحظى الملتقى بدعم ومشاركة جهات حكومية ومؤسسات وطنية ودولية تسهم بخبراتها في تعزيز حضور المملكة العربية السعودية ضمن منظومة الأمن البحري العالمي، وتأكيد أهمية العمل المشترك لمواكبة التحولات المتسارعة في هذا القطاع الحيوي. " : "The Forum is supported by government entities and national and international organizations whose expertise strengthens the Kingdom of Saudi Arabia’s position within the global maritime security landscape and underscores the importance of collective action in responding to the rapid transformations shaping this vital sector "}
@@ -150,8 +201,10 @@ export default function LeadingPurposeExpertise({
           {/* edge fade masks */}
           {/* <div className="pointer-events-none absolute inset-y-0 left-0 z-10 w-14 bg-gradient-to-r from-[#f7f4fb] to-transparent" />
           <div className="pointer-events-none absolute inset-y-0 right-0 z-10 w-14 bg-gradient-to-l from-[#f3e6fb] to-transparent" /> */}
-          <div className="absolute right-0 top-[50%] h-[12rem] w-14 -translate-y-1/2 bg-gradient-to-l from-[#EFF7FD] via-[#EFF7FD]/0 to-transparent" />
-          <div className="pointer-events-none absolute left-0 top-[50%] h-[12rem] w-14 -translate-y-1/2 bg-gradient-to-r from-[#EFF7FD] via-[#EFF7FD]/0 to-transparent" />
+          {/* <div className="absolute right-0 top-[50%] h-[12rem] w-14 -translate-y-1/2 bg-gradient-to-l from-[#EFF7FD] via-[#EFF7FD]/0 to-transparent" />
+          <div className="pointer-events-none absolute left-0 top-[50%] h-[12rem] w-14 -translate-y-1/2 bg-gradient-to-r from-[#EFF7FD] via-[#EFF7FD]/0 to-transparent" /> */}
+          <div className="absolute right-0 top-[50%] h-[12rem] w-14 -translate-y-1/2 bg-gradient-to-l from-[#0a0f1c] via-[#0a0f1c]/0 to-transparent" />
+          <div className="pointer-events-none absolute left-0 top-[50%] h-[12rem] w-14 -translate-y-1/2 bg-gradient-to-r from-[#0a0f1c] via-[#0a0f1c]/0 to-transparent" />
 
           <div className="overflow-hidden px-14" ref={emblaRef}>
             <div className="flex">

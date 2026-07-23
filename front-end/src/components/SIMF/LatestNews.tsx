@@ -4,6 +4,7 @@ import React, { useState } from "react";
 import { useTranslations } from "next-intl";
 import { motion, Variants, AnimatePresence } from "framer-motion";
 import { X } from "lucide-react";
+import Link from "next/link";
 
 interface NewsItem {
   category: string;
@@ -40,6 +41,7 @@ const DEFAULT_ITEMS: NewsItem[] = [
     imageSrc: "/news-images/1.1.webp",
     imageAlt:
       "Patronage confirmed for the 4th Saudi International Maritime Forum",
+    href: "/en/blog/1",
   },
   // {
   //   category: "Agenda",
@@ -77,6 +79,7 @@ const DEFAULT_ITEMS_AR: NewsItem[] = [
     imageSrc: "/news-images/1.webp",
     imageAlt:
       "تأكيد رعاية النسخة الرابعة من الملتقى البحري السعودي الدولي",
+    href: "/ar/blog/1",
   },
   // {
   //   category: "الأجندة",
@@ -269,16 +272,32 @@ export default function LatestNews({
                       `}
                   />
                 </a> */}
-                <button
+
+                {/* uncomment this later when they want to return to popup */}
+                {/* <button
                   type="button"
                   onClick={() => setSelectedNews(item)}
+                  className="mt-6 inline-flex items-center gap-1.5 text-sm font-medium text-[#5b4180] transition-colors hover:text-[#7d23ce]"
+                > */}
+                {/* <button
+                  href={item.href ?? "#"}
+                  type="button"
                   className="mt-6 inline-flex items-center gap-1.5 text-sm font-medium text-[#5b4180] transition-colors hover:text-[#7d23ce]"
                 >
                   {readMoreLabelText}
                   <ArrowUpRightIcon
                     className={`transition-transform duration-300 group-hover:translate-x-1 ${isAr ? "-scale-x-100 group-hover:-translate-x-1" : ""}`}
                   />
-                </button>
+                </button> */}
+                <Link
+                  href={item.href ?? "#"}
+                  className="mt-6 inline-flex items-center gap-1.5 text-sm font-medium text-[#5b4180] transition-colors hover:text-[#7d23ce]"
+                >
+                  {readMoreLabelText}
+                  <ArrowUpRightIcon
+                    className={`transition-transform duration-300 group-hover:translate-x-1 ${isAr ? "-scale-x-100 group-hover:-translate-x-1" : ""}`}
+                  />
+                </Link>
               </div>
             </motion.article>
           ))}

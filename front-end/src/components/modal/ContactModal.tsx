@@ -146,6 +146,7 @@ export default function ContactModal({
                     placeholder={t("namePlaceholder")}
                     value={form.name}
                     onChange={handleChange}
+                    required
                     />
 
                     <Input
@@ -154,6 +155,7 @@ export default function ContactModal({
                     placeholder={t("organizationPlaceholder")}
                     value={form.organization}
                     onChange={handleChange}
+                    required
                     />
                 </div>
 
@@ -165,6 +167,7 @@ export default function ContactModal({
                     placeholder={t("jobTitlePlaceholder")}
                     value={form.jobTitle}
                     onChange={handleChange}
+                    required
                     />
 
                     <Select
@@ -173,6 +176,7 @@ export default function ContactModal({
                     options={countries}
                     value={form.country}
                     onChange={handleChange}
+                    required
                     />
                 </div>
 
@@ -199,6 +203,7 @@ export default function ContactModal({
                     label={t("mobile")}
                     value={form.mobile}
                     onChange={handleChange}
+                    required
                     />
                 </div>
 
@@ -211,6 +216,7 @@ export default function ContactModal({
                     placeholder="example@company.com"
                     value={form.email}
                     onChange={handleChange}
+                    required
                     />
 
                     <Input
@@ -219,6 +225,7 @@ export default function ContactModal({
                     placeholder="https://example.com"
                     value={form.website}
                     onChange={handleChange}
+                    required
                     />
                 </div>
 
@@ -255,6 +262,7 @@ export default function ContactModal({
                     "
                     value={form.message}
                     onChange={handleChange}
+                    required
                 />
 
                 {/* Row 8 */}

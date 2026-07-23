@@ -118,7 +118,7 @@ export default function Modal({
                     </button>
 
                     {title && (
-                    <div className="border-b border-slate-200 px-10 py-6">
+                    <div className="border-b border-slate-200 pl-[2.5rem] pr-[5rem] py-6">
                         <h2 className="text-2xl font-bold text-slate-900">
                         {title}
                         </h2>

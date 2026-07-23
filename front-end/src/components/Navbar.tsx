@@ -6,7 +6,14 @@ import Link from "next/link";
 import Image from "next/image";
 import { usePathname, useRouter } from "next/navigation";
 
-export default function Navbar() {
+interface NavbarProps {
+  transparentAtTop?: boolean;
+}
+
+// export default function Navbar() {
+export default function Navbar({
+  transparentAtTop = true,
+}: NavbarProps) {
   const t = useTranslations("Navbar");
   const locale = useLocale();
   const isAr = locale === "ar";
@@ -58,8 +65,10 @@ export default function Navbar() {
       className={[
         "fixed top-0 left-0 right-0 z-50 transition-all duration-500",
         visible ? "translate-y-0" : "-translate-y-full",
-        atTop
-          ? "bg-transparent"
+        transparentAtTop
+          ? atTop
+            ? "bg-transparent"
+            : "bg-black/80 backdrop-blur-md border-b border-white/10"
           : "bg-black/80 backdrop-blur-md border-b border-white/10",
       ].join(" ")}
     >
