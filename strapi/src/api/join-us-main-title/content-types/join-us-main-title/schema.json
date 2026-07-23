@@ -1,0 +1,27 @@
+{
+  "kind": "collectionType",
+  "collectionName": "join_us_main_titles",
+  "info": {
+    "singularName": "join-us-main-title",
+    "pluralName": "join-us-main-titles",
+    "displayName": "join_us_main_title"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {
+    "i18n": {
+      "localized": true
+    }
+  },
+  "attributes": {
+    "main_title": {
+      "type": "string",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    }
+  }
+}

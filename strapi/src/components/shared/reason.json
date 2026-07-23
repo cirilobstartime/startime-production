@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_shared_reasons",
+  "info": {
+    "displayName": "Reason"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "shortDescription": {
+      "type": "string"
+    }
+  },
+  "config": {}
+}

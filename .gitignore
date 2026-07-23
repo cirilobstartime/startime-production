@@ -1,0 +1,10 @@
+my-export.tar.gz
+node_modules/
+.env
+.env.*
+.next/
+dist/
+export/
+*.tar.gz
+postgres_backup.sql
+postgres_backup_*.sql

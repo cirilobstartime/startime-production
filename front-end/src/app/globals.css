@@ -1,0 +1,305 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* Primary Color (#5A417F) - Purple */
+    --primary: 264 32% 38%;
+    --primary-foreground: 0 0% 100%;
+
+    /* Secondary Color (#D4BDA3) - Beige/Gold */
+    --secondary: 32 35% 73%;
+    --secondary-foreground: 264 32% 15%;
+
+    /* Background - Clean White */
+    --background: 0 0% 100%;
+    --foreground: 264 32% 10%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 264 32% 10%;
+
+    --border: 264 10% 90%;
+    --input: 264 10% 90%;
+    --ring: 264 32% 38%;
+
+    --radius: 0.75rem;
+  }
+
+  .dark {
+    --background: 264 30% 5%;
+    --foreground: 0 0% 98%;
+    --primary: 264 32% 50%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+  @apply bg-background text-foreground;
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+html[lang="en"] body {
+  font-family: var(--font-roboto), sans-serif !important;
+}
+
+html[lang="ar"] body {
+  font-family: var(--font-noto-kufi), sans-serif !important;
+}
+}
+/* --- 3D Gallery Structure --- */
+.gallery_box {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%) rotateX(-8deg);
+  transform-style: preserve-3d;
+}
+
+.gallery_box_outer {
+  width: 300px;
+  height: 200px;
+  position: relative;
+  transform: perspective(1000px);
+  transform-style: preserve-3d;
+}
+
+.gallery_box_in {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-position: center center;
+  background-size: cover;
+}
+
+/* Positioning logic ... */
+.gallery_box_in:nth-child(1) {
+  transform: rotateY(0deg) translateZ(450px);
+}
+.gallery_box_in:nth-child(2) {
+  transform: rotateY(40deg) translateZ(450px);
+}
+.gallery_box_in:nth-child(3) {
+  transform: rotateY(80deg) translateZ(450px);
+}
+.gallery_box_in:nth-child(4) {
+  transform: rotateY(120deg) translateZ(450px);
+}
+.gallery_box_in:nth-child(5) {
+  transform: rotateY(160deg) translateZ(450px);
+}
+.gallery_box_in:nth-child(6) {
+  transform: rotateY(200deg) translateZ(450px);
+}
+.gallery_box_in:nth-child(7) {
+  transform: rotateY(240deg) translateZ(450px);
+}
+.gallery_box_in:nth-child(8) {
+  transform: rotateY(280deg) translateZ(450px);
+}
+.gallery_box_in:nth-child(9) {
+  transform: rotateY(320deg) translateZ(450px);
+}
+
+/* --- Fonts --- */
+@font-face {
+  font-family: "Neue Montreal";
+  src: url("/fonts/NeueMontreal-Regular.otf") format("opentype");
+  font-weight: 400;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Neue Montreal";
+  src: url("/fonts/NeueMontreal-Bold.otf") format("opentype");
+  font-weight: 700;
+  font-display: swap;
+}
+
+/* Target devices with screen widths of 768px or less */
+@media screen and (max-width: 768px) {
+  .hide-on-mobile {
+    display: none; /* Entirely removes the div from the visual layout */
+  }
+}
+/* Standard Desktop View (1024px and up) */
+@media screen and (min-width: 1024px) {
+  .hide-on-desktop{
+    /* Your desktop-only styles go here */
+    display: none;
+  }
+  .margin-left-35-percent{
+    margin-left: 35%;
+  }
+}
+
+[dir="rtl"] .margin-left-35-percent {
+  margin-right: 35%;
+}
+.addressLine2{
+  float: left;
+}
+
+@media (min-width: 768px) {
+    .md\:text-6xl {
+        line-height: 1.5 !important;
+    }
+}
+
+/* SIMF Landing Page Styles */
+.simf-hero-section { 
+  background: linear-gradient(125.49deg, #193050 -0.01%, #396F9B 99.99%);
+}
+.simf-hero-section-2{
+  background: linear-gradient(180deg, rgba(199, 220, 235, 0) 0%, #C7DCEB 100%);
+}
+
+.vidwrapper {
+  position: relative;
+  width: 100%;
+}
+.overlappingVideo {
+  position: absolute;
+  /* Adjust top and bottom to set how far it overlaps into both sections */
+  top: -100px; 
+  bottom: -100px; 
+  left: 0;
+  width: 100%;
+  height: calc(100% + 200px);
+  object-fit: cover;
+  z-index: 1; /* Sits below section content, above section backgrounds */
+}
+
+.underthepatronage {
+  background: linear-gradient(0deg, var(--White, #FFFFFF), var(--White, #FFFFFF)),
+  linear-gradient(0deg, rgba(0, 124, 216, 0.5), rgba(0, 124, 216, 0.5));
+  border-radius: 10px;
+  display: inline-block;
+  width: fit-content;
+}
+
+.homepage-staricon{
+  height: 12px;
+  margin-top: -2px;
+  display: inline;
+}
+
+.homepage-clockicon{
+  height: 12px;
+  margin-top: 2px;
+  display: inline;
+  color: #E8C060;
+}
+
+.homepage-pinicon{
+  height: 12px;
+  margin-top: 2px;
+  display: inline;
+  color: #E8C060;
+}
+
+.homepage-shieldhalficon{
+  height: 12px;
+  margin-top: 2px;
+  display: inline;
+  color: #E8C060;
+}
+
+.homepage-shieldcheckicon{
+  height: 12px;
+  margin-top: 2px;
+  display: inline;
+  color: #E8C060;
+}
+
+.minister-of-defense{
+  color: #E8C060;
+}
+.simf-title{
+  padding-top: 3rem;
+}
+.simf-desc{
+  padding-bottom: 3rem;
+}
+
+.videoplayerhomepage{
+  background-image: url('/video-background-preview.webp');
+}
+
+
+
+
+/* For Hero Section */
+@media (min-width: 768px) {   
+    .herotextdiv{
+      padding-bottom: 15rem !important;
+    }
+}
+.spanpatronage{
+  background: linear-gradient(0deg, rgba(0, 124, 216, 0.5), rgba(0, 124, 216, 0.5)), #FFFFFF;
+  border-radius: 999px;
+  color: #001640;
+}
+[dir="rtl"] .spanpatronage{
+  align-self: flex-start;
+}
+/* end of For Hero Section */
+/* For Banner Video Section */
+@media (min-width: 768px) {   
+    .videodiv{
+      margin-top: -10rem;
+    }
+}
+/* Mobile phones */
+@media (max-width: 767px) {
+  .videodiv{
+    margin-top: -4rem;
+  }
+}
+
+/* Tablets */
+@media (min-width: 768px) and (max-width: 1023px) {
+  
+}
+
+/* end of For Banner Video Section */
+
+/* For Become A Partner Section */
+.becomeapartnerbtn, .becomeapartnerbtn:hover{
+  border-radius: var(--Collection-Radius-pill, 999px);
+  background: var(--color-violet-38, #5B4180);
+}
+
+.joinnowbtn, .joinnowbtn:hover{
+  border-radius: var(--Collection-Radius-pill, 999px);
+  background: var(--Colors-Yallow-Normal, #4B5563);
+  color: #FFFFFF;
+}
+/* end of For Become A Partner Section */
+
+/* For Leading with Purpose and Expertise Section */
+.startimelinksdiv{
+  display: flex;
+  width: 1280px;
+  height: 144px;
+  justify-content: center;
+  align-items: center;
+}
+/* end For Leading with Purpose and Expertise Section */
+
+/* For Services section */
+.servicesection{
+  background: linear-gradient(125.49deg, #193050 -0.01%, #396F9B 99.99%);
+}
+/* end of For Services section */
+
+/* For Value Proposition 1 */
+.b2g-container{
+  background: linear-gradient(125.49deg, #193050 -0.01%, #396F9B 99.99%);
+  border-radius: 32px;
+}
+/* end For Value Proposition 1 */

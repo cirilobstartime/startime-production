@@ -1,0 +1,59 @@
+services:
+  next-app:
+    build: ./front-end
+    container_name: startime-frontend
+    restart: always
+    ports:
+      - "3004:3000"
+    env_file:
+      - ./front-end/.env.local
+    environment:
+      - NODE_ENV=production
+    depends_on:
+      - mailer
+
+  mailer:
+    build: ./backend
+    container_name: startime-mailer
+    restart: always
+    ports:
+      - "4000:4000"
+    env_file:
+      - ./backend/.env
+
+  strapi:
+    build: ./strapi
+    container_name: startime-strapi
+    restart: always
+    env_file: ./strapi/postgres.env
+    environment:
+      - DATABASE_CLIENT=postgres
+      - DATABASE_HOST=postgres
+      - DATABASE_PORT=5432
+      - DATABASE_NAME=strapi
+      - DATABASE_USERNAME=strapi
+      - DATABASE_PASSWORD=strapi
+      - DATABASE_SSL=false
+    ports:
+      - "1340:1340"
+    volumes:
+      - strapi_public:/app/public/uploads
+    depends_on:
+      - postgres
+
+  postgres:
+    image: postgres:16-alpine
+    container_name: startime-postgres
+    restart: always
+    environment:
+      - POSTGRES_DB=strapi
+      - POSTGRES_USER=strapi
+      - POSTGRES_PASSWORD=strapi
+    volumes:
+      - strapi_db:/var/lib/postgresql/data
+    ports:
+      - "5432:5432"
+
+volumes:
+  strapi_db:
+  strapi_public:

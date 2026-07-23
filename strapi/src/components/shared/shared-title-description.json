@@ -1,0 +1,18 @@
+{
+  "collectionName": "components_shared_shared_title_descriptions",
+  "info": {
+    "displayName": "Shared_Title_Description"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "text",
+      "required": true
+    }
+  },
+  "config": {}
+}

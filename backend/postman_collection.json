@@ -1,0 +1,62 @@
+{
+  "info": {
+    "name": "StarTime Mailer API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "variable": [
+    {
+      "key": "base_url",
+      "value": "http://localhost:4000"
+    }
+  ],
+  "item": [
+    {
+      "name": "Join Us",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "url": {
+          "raw": "{{base_url}}/api/join-us",
+          "host": ["{{base_url}}"],
+          "path": ["api", "join-us"]
+        },
+        "body": {
+          "mode": "formdata",
+          "formdata": [
+            { "key": "name",           "value": "Ahmed Al-Harbi",               "type": "text" },
+            { "key": "email",          "value": "ahmed@example.com",            "type": "text" },
+            { "key": "phone",          "value": "+966501234567",                "type": "text" },
+            { "key": "specialization", "value": "Frontend Developer",           "type": "text" },
+            { "key": "message",        "value": "I am interested in joining the team and bringing my skills.", "type": "text" },
+            { "key": "cv",             "type": "file", "src": [] },
+            { "key": "files",          "type": "file", "src": [] }
+          ]
+        }
+      }
+    },
+    {
+      "name": "Contact",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "url": {
+          "raw": "{{base_url}}/api/contact",
+          "host": ["{{base_url}}"],
+          "path": ["api", "contact"]
+        },
+        "body": {
+          "mode": "formdata",
+          "formdata": [
+            { "key": "entity",   "value": "TelNova Solutions",                  "type": "text" },
+            { "key": "name",     "value": "Sara Al-Ghamdi",                     "type": "text" },
+            { "key": "position", "value": "Project Manager",                    "type": "text" },
+            { "key": "phone",    "value": "+966509876543",                      "type": "text" },
+            { "key": "email",    "value": "sara@telnova.com",                   "type": "text" },
+            { "key": "message",  "value": "We would like to discuss a potential partnership.", "type": "text" },
+            { "key": "attachments", "type": "file", "src": [] }
+          ]
+        }
+      }
+    }
+  ]
+}

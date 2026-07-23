@@ -1,0 +1,4 @@
+services:
+  strapi:
+    environment:
+      DATABASE_NAME: strapi_restore

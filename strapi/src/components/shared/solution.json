@@ -1,0 +1,18 @@
+{
+  "collectionName": "components_shared_solutions",
+  "info": {
+    "displayName": "solution"
+  },
+  "options": {},
+  "attributes": {
+    "soulationName": {
+      "type": "string"
+    },
+    "bullet": {
+      "type": "component",
+      "component": "shared.text-item",
+      "repeatable": true
+    }
+  },
+  "config": {}
+}

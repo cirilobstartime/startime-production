@@ -1,0 +1,29 @@
+{
+  "kind": "collectionType",
+  "collectionName": "sss_arina_second_banners",
+  "info": {
+    "singularName": "sss-arina-second-banner",
+    "pluralName": "sss-arina-second-banners",
+    "displayName": "sss_arina_second_banner"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {
+    "i18n": {
+      "localized": true
+    }
+  },
+  "attributes": {
+    "element": {
+      "type": "component",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "component": "shared.shared-title-description",
+      "repeatable": false
+    }
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "kind": "collectionType",
+  "collectionName": "solution_fourth_banners",
+  "info": {
+    "singularName": "solution-fourth-banner",
+    "pluralName": "solution-fourth-banners",
+    "displayName": "solution_fourth_banner"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {
+    "i18n": {
+      "localized": true
+    }
+  },
+  "attributes": {
+    "event": {
+      "type": "component",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "component": "shared.shared-title-description",
+      "repeatable": true
+    }
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "kind": "collectionType",
+  "collectionName": "home_banner_2s",
+  "info": {
+    "singularName": "home-banner-2",
+    "pluralName": "home-banner-2s",
+    "displayName": "Home_BANNER_2"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {
+    "i18n": {
+      "localized": true
+    }
+  },
+  "attributes": {
+    "element": {
+      "type": "component",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "component": "shared.shared-title-description",
+      "repeatable": true
+    },
+    "banner": {
+      "type": "media",
+      "pluginOptions": {
+        "i18n": {
+          "localized": false
+        }
+      },
+      "multiple": false,
+      "allowedTypes": [
+        "images"
+      ]
+    }
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "kind": "collectionType",
+  "collectionName": "join_us_team_sliders",
+  "info": {
+    "singularName": "join-us-team-slider",
+    "pluralName": "join-us-team-sliders",
+    "displayName": "join_us_team_slider"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {
+    "i18n": {
+      "localized": true
+    }
+  },
+  "attributes": {
+    "banner": {
+      "type": "component",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "component": "shared.join-us-teamwrok-banner",
+      "repeatable": true
+    }
+  }
+}

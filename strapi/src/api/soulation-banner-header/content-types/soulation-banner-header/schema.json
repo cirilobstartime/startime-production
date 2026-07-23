@@ -1,0 +1,39 @@
+{
+  "kind": "collectionType",
+  "collectionName": "soulation_banner_headers",
+  "info": {
+    "singularName": "soulation-banner-header",
+    "pluralName": "soulation-banner-headers",
+    "displayName": "soulation_banner_Header"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {
+    "i18n": {
+      "localized": true
+    }
+  },
+  "attributes": {
+    "title": {
+      "type": "string",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "background": {
+      "type": "media",
+      "pluginOptions": {
+        "i18n": {
+          "localized": false
+        }
+      },
+      "multiple": false,
+      "allowedTypes": [
+        "images"
+      ]
+    }
+  }
+}

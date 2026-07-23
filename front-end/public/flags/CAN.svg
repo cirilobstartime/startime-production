@@ -1,0 +1,50 @@
+<svg width="22" height="16" viewBox="0 0 22 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+<defs>
+  <clipPath id="clip">
+    <rect width="22" height="16" rx="2"/>
+  </clipPath>
+</defs>
+
+<g clip-path="url(#clip)">
+  <!-- Background -->
+  <rect width="22" height="16" fill="white"/>
+
+  <!-- Side bands -->
+  <rect width="5" height="16" fill="#D52B1E"/>
+  <rect x="17" width="5" height="16" fill="#D52B1E"/>
+
+  <!-- Simplified Maple Leaf -->
+  <path
+    d="M11 2.2
+       L11.6 4.1
+       L13.3 3.2
+       L12.8 5
+       L14.4 5.3
+       L13.1 6.6
+       L14.3 7.7
+       L12.7 8
+       L13.1 10
+       L11.8 9.3
+       L11 12.8
+       L10.2 9.3
+       L8.9 10
+       L9.3 8
+       L7.7 7.7
+       L8.9 6.6
+       L7.6 5.3
+       L9.2 5
+       L8.7 3.2
+       L10.4 4.1
+       Z"
+    fill="#D52B1E"/>
+</g>
+
+<rect
+  x="0.5"
+  y="0.5"
+  width="21"
+  height="15"
+  rx="1.5"
+  stroke="black"
+  stroke-opacity="0.1"/>
+</svg>

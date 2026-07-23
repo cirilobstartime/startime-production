@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_shared_soluation_num_descs",
+  "info": {
+    "displayName": "soluation_num_desc"
+  },
+  "options": {},
+  "attributes": {
+    "num": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    }
+  },
+  "config": {}
+}

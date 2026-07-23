@@ -1,0 +1,45 @@
+{
+  "kind": "collectionType",
+  "collectionName": "protfoflio_headers",
+  "info": {
+    "singularName": "protfoflio-header",
+    "pluralName": "protfoflio-headers",
+    "displayName": "ProtfoflioHeader"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {
+    "i18n": {
+      "localized": true
+    }
+  },
+  "attributes": {
+    "image": {
+      "type": "component",
+      "pluginOptions": {
+        "i18n": {
+          "localized": false
+        }
+      },
+      "component": "shared.image",
+      "repeatable": true
+    },
+    "title": {
+      "type": "string",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "description": {
+      "type": "string",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "kind": "collectionType",
+  "collectionName": "discover_ceo_elements",
+  "info": {
+    "singularName": "discover-ceo-element",
+    "pluralName": "discover-ceo-elements",
+    "displayName": "discover_CEO_element "
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {
+    "i18n": {
+      "localized": true
+    }
+  },
+  "attributes": {
+    "element_text": {
+      "type": "component",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "component": "shared.shared-title-description",
+      "repeatable": true
+    },
+    "element_logo": {
+      "type": "media",
+      "pluginOptions": {
+        "i18n": {
+          "localized": false
+        }
+      },
+      "multiple": false,
+      "allowedTypes": [
+        "images"
+      ]
+    }
+  }
+}

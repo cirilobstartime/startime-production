@@ -1,0 +1,7 @@
+/**
+ * solution-fourth-banner service
+ */
+
+import { factories } from '@strapi/strapi';
+
+export default factories.createCoreService('api::solution-fourth-banner.solution-fourth-banner');

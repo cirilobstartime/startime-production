@@ -1,0 +1,49 @@
+{
+  "kind": "collectionType",
+  "collectionName": "home_triple_s_areanas",
+  "info": {
+    "singularName": "home-triple-s-areana",
+    "pluralName": "home-triple-s-areanas",
+    "displayName": "Home_Triple_S_Areana"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {
+    "i18n": {
+      "localized": true
+    }
+  },
+  "attributes": {
+    "Triple_S_Titles": {
+      "type": "component",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "component": "shared.shared-title-description",
+      "repeatable": false
+    },
+    "description": {
+      "type": "text",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "triple_s_image": {
+      "type": "media",
+      "pluginOptions": {
+        "i18n": {
+          "localized": false
+        }
+      },
+      "multiple": false,
+      "allowedTypes": [
+        "images"
+      ]
+    }
+  }
+}

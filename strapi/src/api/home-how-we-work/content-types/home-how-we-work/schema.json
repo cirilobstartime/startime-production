@@ -1,0 +1,37 @@
+{
+  "kind": "collectionType",
+  "collectionName": "home_how_we_works",
+  "info": {
+    "singularName": "home-how-we-work",
+    "pluralName": "home-how-we-works",
+    "displayName": "Home_How_We_Work"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {
+    "i18n": {
+      "localized": true
+    }
+  },
+  "attributes": {
+    "how_we_work_title": {
+      "type": "component",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "component": "shared.shared-title-description",
+      "repeatable": false
+    },
+    "description": {
+      "type": "text",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    }
+  }
+}

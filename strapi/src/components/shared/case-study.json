@@ -1,0 +1,29 @@
+{
+  "collectionName": "components_shared_case_studies",
+  "info": {
+    "displayName": "project"
+  },
+  "options": {},
+  "attributes": {
+    "project_name": {
+      "type": "string"
+    },
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "shortDescription": {
+      "type": "string"
+    },
+    "Details": {
+      "type": "blocks"
+    },
+    "link": {
+      "type": "text"
+    }
+  },
+  "config": {}
+}

@@ -1,0 +1,29 @@
+{
+  "kind": "collectionType",
+  "collectionName": "discover_videos",
+  "info": {
+    "singularName": "discover-video",
+    "pluralName": "discover-videos",
+    "displayName": "discover_video"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {
+    "i18n": {
+      "localized": false
+    }
+  },
+  "attributes": {
+    "about_video": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    }
+  }
+}

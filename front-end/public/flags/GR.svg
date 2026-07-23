@@ -1,0 +1,36 @@
+<svg width="22" height="16" viewBox="0 0 22 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+<defs>
+  <clipPath id="clip">
+    <rect width="22" height="16" rx="2"/>
+  </clipPath>
+</defs>
+
+<g clip-path="url(#clip)">
+  <!-- White background -->
+  <rect width="22" height="16" fill="white"/>
+
+  <!-- Blue stripes -->
+  <rect y="0" width="22" height="1.78" fill="#0D5EAF"/>
+  <rect y="3.56" width="22" height="1.78" fill="#0D5EAF"/>
+  <rect y="7.12" width="22" height="1.78" fill="#0D5EAF"/>
+  <rect y="10.68" width="22" height="1.78" fill="#0D5EAF"/>
+  <rect y="14.24" width="22" height="1.76" fill="#0D5EAF"/>
+
+  <!-- Canton -->
+  <rect width="9.8" height="8.9" fill="#0D5EAF"/>
+
+  <!-- White cross -->
+  <rect x="3.9" width="2" height="8.9" fill="white"/>
+  <rect y="3.45" width="9.8" height="2" fill="white"/>
+</g>
+
+<rect
+  x="0.5"
+  y="0.5"
+  width="21"
+  height="15"
+  rx="1.5"
+  stroke="black"
+  stroke-opacity="0.1"
+/>
+</svg>

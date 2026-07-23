@@ -1,0 +1,29 @@
+{
+  "kind": "collectionType",
+  "collectionName": "home_protfolios",
+  "info": {
+    "singularName": "home-protfolio",
+    "pluralName": "home-protfolios",
+    "displayName": "Home_Protoflio"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {
+    "i18n": {
+      "localized": true
+    }
+  },
+  "attributes": {
+    "title_subtitle": {
+      "type": "component",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "component": "shared.shared-title-description",
+      "repeatable": false
+    }
+  }
+}

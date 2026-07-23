@@ -1,0 +1,37 @@
+{
+  "kind": "collectionType",
+  "collectionName": "sss_arina_fourth_banners",
+  "info": {
+    "singularName": "sss-arina-fourth-banner",
+    "pluralName": "sss-arina-fourth-banners",
+    "displayName": "sss_arina_fourth_banner"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {
+    "i18n": {
+      "localized": true
+    }
+  },
+  "attributes": {
+    "login_link": {
+      "type": "text",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "title": {
+      "type": "component",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "component": "shared.text-item",
+      "repeatable": true
+    }
+  }
+}

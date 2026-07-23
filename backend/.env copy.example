@@ -1,0 +1,15 @@
+# SMTP sender credentials
+SMTP_HOST=smtp.gmail.com
+SMTP_PORT=587
+SMTP_SECURE=false
+SMTP_USER=your-email@example.com
+SMTP_PASSWORD=your-smtp-password
+
+# Recipient emails
+JOINUS_TO_EMAIL=hr@startime.sa
+CONTACT_TO_EMAIL=info@startime.sa
+CONTACT_SECTION_TO_EMAIL=hr@startime.sa
+SOLUTION_TO_EMAIL=hr@startime.sa
+
+# Server
+PORT=4000

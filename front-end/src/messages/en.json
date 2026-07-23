@@ -1,0 +1,1371 @@
+{
+  "Navbar": {
+    "home": "Home",
+    "discover": "Discover",
+    "solutions": "Solutions",
+    "portfolio": "Portfolio",
+    "tripleS": "Triple S Arena",
+    "joinUs": "Join Us",
+    "contact": "Contact Us"
+  },
+  "Menu": {
+    "home": "HOME",
+    "services": "SERVICES",
+    "cases": "CASES",
+    "industries": "INDUSTRIES",
+    "whoWeAre": "WHO WE ARE",
+    "contacts": "CONTACTS",
+    "social": "OUR SOCIAL",
+    "getInTouch": "GET IN TOUCH",
+    "close": "CLOSE"
+  },
+  "socialLinks": {
+    "facebook": "Facebook",
+    "behance": "Behance",
+    "dribbble": "Dribbble",
+    "instagram": "Instagram"
+  },
+
+  "SolutionsPage": {
+    "title": "Inspiring Communities",
+    "statsSection": {
+      "description": "Rooted in Our Unwavering Values We have delivered extraordinary experiences and actively empowered our partners to achieve their aspirations and goals",
+      "stats": [
+        {
+          "number": "+500",
+          "label": "Event Consultations"
+        },
+        {
+          "number": "+750",
+          "label": "B2B Meeting"
+        },
+        {
+          "number": "38",
+          "label": "International Events"
+        }
+      ]
+    }
+  },
+  "HorizontalServices": {
+    "viewMore": "View More",
+    "backToTop": "Back to Top",
+    "services": [
+      {
+        "id": 1,
+        "title": "Web Design",
+        "quote": "Design Your Vision Online with Our Web Design Services",
+        "desc": "StarTime produces high-quality websites that look great on all devices. Our website designing services include web design, development, e-commerce, SEO, and more."
+      },
+      {
+        "id": 2,
+        "title": "Mobile Apps",
+        "quote": "Designing mobile apps that make life easier!",
+        "desc": "Custom app design services in StarTime can help your business get noticed by potential customers. We can create a mobile-friendly app that is both user-friendly and visually appealing."
+      },
+      {
+        "id": 3,
+        "title": "Web Development",
+        "quote": "Building Tomorrow's Web, Today!",
+        "desc": "StarTime offers web development services that can help take your business to the next level. We create custom websites that are both user-friendly and highly functional."
+      },
+      {
+        "id": 4,
+        "title": "Branding Design",
+        "quote": "Designing with Purpose - Transform Your Brand to Inspire Results!",
+        "desc": "If you're looking for branding design services, look no further than StarTime. We can help you create a unique and memorable brand that will stand out from the competition."
+      },
+      {
+        "id": 5,
+        "title": "Motion Design",
+        "quote": "Design in Motion - Bringing Your Vision to Life!",
+        "desc": "StarTime specializes in creating high-quality, innovative, and engaging motion graphic services for various clients and projects."
+      },
+      {
+        "id": 6,
+        "title": "UX Audit",
+        "quote": "Let Us Take You on a Journey to Greater User Experiences!",
+        "desc": "StarTime's user experience audit services are designed to help get a detailed report highlighting any areas that need improvement and fixing on your website or in the app."
+      },
+      {
+        "id": 7,
+        "title": "UI/UX Design",
+        "quote": "Designing Digital Experiences that Make a Difference",
+        "desc": "We are a full-service design studio providing world-class UI/UX designing services to startups and enterprises."
+      },
+      {
+        "id": 8,
+        "title": "Illustration Design",
+        "quote": "Bringing your ideas to life with outstanding illustrations!",
+        "desc": "Looking for an illustration design service that can help bring your vision to life? Our designers can create custom illustrations that are perfect for any project."
+      },
+      {
+        "id": 9,
+        "title": "3D Modeling",
+        "quote": "Bring your ideas to life with 3D Modeling!",
+        "desc": "3D modeling design services from StarTime are the perfect way to add that extra dimension to your project. StarTime can bring your vision to life in a way that is both creative and realistic."
+      },
+      {
+        "id": 10,
+        "title": "AI UI/UX Design",
+        "quote": "Creating future-proof digital solutions with AI UI/UX Design",
+        "desc": "Technologies continue to grow — learn how AI helps develop unique and convincing visuals."
+      }
+    ]
+  },
+  "HireUs": {
+    "heroTitle": "We work with the most progressive companies from all over the world.",
+    "hireBtn": "Hire Us",
+    "description": "Since 2014, StarTime Studio has been helping businesses worldwide grow and succeed with innovative, tailor-made design solutions. As a leading UI/UX design company, or UX research agency, we've got the expertise to turn your vision into reality.",
+    "features": [
+      {
+        "title": "Focus on Innovation and Latest Trends",
+        "desc": "We stay ahead of the curve by constantly innovating and applying the latest design trends and technologies."
+      },
+      {
+        "title": "Personalized Solutions Tailored to Your Business",
+        "desc": "Every project at StarTime Studio is customized to meet the client’s specific goals."
+      },
+      {
+        "title": "End-to-End Design Services",
+        "desc": "As a full-service user interface design agency, we provide everything from UX research to 3D modeling."
+      },
+      {
+        "title": "Commitment to Long-Term Partnerships",
+        "desc": "We don’t just deliver a product and walk away. We focus on building long-term relationships."
+      }
+    ],
+    "faqTitle": "Do you have any questions? We tried to answer most of them!",
+    "faqs": [
+      {
+        "q": "WHAT INSPIRED THE FOUNDING OF STARTIME WEB DESIGN STUDIO?",
+        "a": "The idea for StarTime came about because we saw a need for high-quality, custom web design that was affordable for small businesses."
+      },
+      {
+        "q": "WHAT SETS STARTIME APART FROM OTHER WEB DESIGN STUDIOS?",
+        "a": "Our team of experts use the latest technologies and trends to create custom websites tailored to each client's unique needs."
+      },
+      {
+        "q": "WHAT ARE SOME OF THE CHALLENGES YOU FACE?",
+        "a": "Staying up-to-date with the latest design trends and technologies and meeting tight deadlines."
+      },
+      {
+        "q": "WHAT ARE YOUR GOALS FOR THE FUTURE?",
+        "a": "Expanding our client base, enhancing our service offerings, and continuing to improve our skills."
+      },
+      {
+        "q": "HOW CAN PEOPLE GET IN TOUCH?",
+        "a": "You can reach us by phone at +966 920010500, email us at info@startime.sa, or fill out the contact form."
+      }
+    ]
+  },
+  "Testimonials": {
+    "title": "Want to know what our clients think about working with us?",
+    "pullMe": "Pull Me",
+    "client": "Client",
+    "list": [
+      {
+        "text": "StarTime has helped me immensely with perfecting my online presence. Through their expert guidance and creative input, I have been able to attract more clients and grow my business exponentially.",
+        "author": "Blake Bell",
+        "title": "Founder",
+        "company": "MIND CLEANSE"
+      },
+      {
+        "text": "StarTime has been a game-changer for my business. Their team is highly creative and always on the cutting edge of the latest trends and technologies. I'm thrilled with the results I've seen so far.",
+        "author": "Heman Gomez",
+        "title": "Founder & CEO",
+        "company": "MYLARGO"
+      },
+      {
+        "text": "Due to StarTime Studio's contributions, our end friends, family, and customers provided enthusiastic feedback. The service provider displayed excellent responsiveness and delivered the project promptly.",
+        "author": "Joshua Lewis",
+        "title": "Founder",
+        "company": "YELLOWSTONE LOCAL"
+      },
+      {
+        "text": "StarTime has helped me immensely with perfecting my online presence. Through their expert guidance and creative input, I have been able to attract more clients and grow my business exponentially.",
+        "author": "Blake Bell",
+        "title": "Founder",
+        "company": "MIND CLEANSE"
+      },
+      {
+        "text": "StarTime has been a game-changer for my business. Their team is highly creative and always on the cutting edge of the latest trends and technologies. I'm thrilled with the results I've seen so far.",
+        "author": "Heman Gomez",
+        "title": "Founder & CEO",
+        "company": "MYLARGO"
+      },
+      {
+        "text": "Due to StarTime Studio's contributions, our end friends, family, and customers provided enthusiastic feedback. The service provider displayed excellent responsiveness and delivered the project promptly.",
+        "author": "Joshua Lewis",
+        "title": "Founder",
+        "company": "YELLOWSTONE LOCAL"
+      }
+    ]
+  },
+
+  "IndustriesPage": {
+    "navBadge": "StarTime * Industries",
+    "badgeText": "Helping Industries Grow, Succeed and Thrive",
+    "title": "Our Industries Strive To Be The Best In The Niche",
+    "button": "Tell us about your project",
+    "description": "StarTime is a forward-thinking design studio that specializes in creating next-generation designs. We believe in pushing the boundaries of what's possible.",
+    "casesTitle": "Check out our cases",
+    "swipe": "Swipe",
+    "cases": {
+      "01": "Adsellr",
+      "02": "RKDE",
+      "03": "Scoop Solar",
+      "04": "Pickle",
+      "05": "CreatorSet",
+      "06": "Mind Cleanse"
+    }
+  },
+  "IndustriesCards": {
+    "viewMore": "View More",
+    "items": {
+      "healthcare": {
+        "title": "Healthcare",
+        "heading": "StarTime Design has a long history of providing top-notch design services to the healthcare industry.",
+        "description": "We have worked with some of the biggest names in the business, and we have a deep understanding of the unique challenges that come with designing for healthcare. From creating engaging patient education materials to designing cutting-edge medical devices, we help you succeed. Our services include:",
+        "services": [
+          "Patient education materials",
+          "Medical device design",
+          "Graphic design for healthcare",
+          "Branding and identity development"
+        ]
+      },
+      "logistics": {
+        "title": "Logistics",
+        "heading": "Logistics is a key industry in the global economy involving the coordination of goods and services.",
+        "description": "StarTime Studio offers innovative solutions to simplify the process and increase efficiency throughout the logistics chain. With our cutting-edge technology and intuitive designs, we provide businesses with the tools they need to stay competitive."
+      },
+      "marketplace": {
+        "title": "Marketplace",
+        "heading": "StarTime is dedicated to creating unique and engaging marketplace experiences for our clients.",
+        "description": "We have the experience and expertise necessary to develop a marketplace that meets all your business needs, from understanding the user journey to creating effective brand identities."
+      },
+      "media": {
+        "title": "Media",
+        "heading": "StarTime recognizes the challenges of developing effective media strategies and provides tailored services.",
+        "description": "Our team of experienced professionals has expertise in video production, social media management, marketing analysis, and strategy development."
+      },
+      "retail": {
+        "title": "Retail",
+        "heading": "Retail design is an ever-changing industry that requires creative and innovative solutions.",
+        "description": "StarTime Studio strives to create an atmosphere that is unique to the brand, making it stand out from competitors and attract more visitors."
+      },
+      "fintech": {
+        "title": "Fintech",
+        "heading": "Fintech design is quickly becoming a booming industry worldwide.",
+        "description": "At StarTime Studio, our goal is to provide fintech solutions tailored specifically to the needs of clients. Our team has experience in designing high-security applications and websites."
+      },
+      "travel": {
+        "title": "Travel",
+        "heading": "StarTime specializes in creating unique, luxury experiences that provide our clients with unforgettable journeys.",
+        "description": "We understand that planning a trip can be overwhelming. That’s why we strive to make our clients’ experience as smooth as possible through smart booking interfaces."
+      },
+      "socialMedia": {
+        "title": "Social Media",
+        "heading": "StarTime Studio is a full-service creative agency that specializes in social media design.",
+        "description": "We also provide comprehensive media production services, such as video editing, animation, audio recording, and post-production."
+      },
+      "education": {
+        "title": "Education",
+        "heading": "StarTime specializes in the Education Design Industry, providing innovative solutions for educational institutions.",
+        "description": "With over 10 years of hands-on experience, our team has a deep understanding of what works best in the education sector to facilitate digital learning."
+      },
+      "webflow": {
+        "title": "Webflow",
+        "heading": "Expert Webflow Design & Development: Crafting Your Digital Presence.",
+        "description": "StarTime Studio excels in crafting exceptional Webflow designs, offering tailored services that blend creativity and technical proficiency.",
+        "services": [
+          "Branding and Identity Development for Webflow",
+          "Graphic Design for Webflow Websites",
+          "Custom Webflow Template Design",
+          "Interactive Content Design"
+        ]
+      },
+      "defi": {
+        "title": "DeFi",
+        "heading": "Revolutionizing Finance: Expert DeFi Design and Development Services.",
+        "description": "StarTime Studio excels in providing cutting-edge DeFi design services, blending innovative technology with intuitive user interfaces.",
+        "services": [
+          "Branding for DeFi Platforms",
+          "UI Design for DeFi Apps",
+          "Token Design and Branding"
+        ]
+      },
+      "crypto": {
+        "title": "Crypto Web Design",
+        "heading": "StarTime Design has a long history of providing top-notch design services to the crypto industry.",
+        "description": "We have partnered with some of the biggest names in the cryptocurrency space and have a deep understanding of blockchain platforms.",
+        "services": [
+          "Crypto Wallet Design",
+          "DeFi Platform Design",
+          "NFT Marketplace Design"
+        ]
+      },
+      "web3": {
+        "title": "Web 3 Design",
+        "heading": "Crafting decentralized digital experiences that are seamless and future-ready.",
+        "description": "We have collaborated with some of the leading innovators in the Web3 space to craft immersive metaverse experiences.",
+        "services": [
+          "Metaverse Experience Design",
+          "Blockchain App UI/UX",
+          "DAO Dashboard Design"
+        ]
+      }
+    }
+  },
+  "ContactPage": {
+    "ContactForm": {
+      "title": "Contact us",
+      "emailLabel": "Email",
+      "phoneLabel": "Phone",
+      "fields": {
+        "entity": "Entity",
+        "name": "Name",
+        "position": "Position",
+        "phone": "Phone",
+        "email": "Email",
+        "message": "Message",
+        "attachments": "Attachments",
+        "submit": "Submit",
+        "successMessage": "Your message has been sent successfully!",
+        "errorMessage": "Something went wrong, please try again."
+      }
+    },
+    "FooterInfo": {
+      "address": "Headquarters – Riyadh, Saudi Arabia",
+      "workingHoursTitle": "We welcome your visit during our official working hours:",
+      "workingHours": "Sunday – Thursday: 9:00 AM – 5:00 PM",
+      "followUs": "Follow Us:"
+    }
+  },
+  "AboutPage": {
+    "hero": {
+      "title": "With our long-standing experience, we envision the future",
+      "teamPhotoPlaceholder": "[Team Photo Placeholder]",
+      "badgeTop10": "Top 10",
+      "badgeDesc": "Generative AI Consultants 2024"
+    },
+
+    "storyy": {
+      "level1": "Level 1: The Beginning",
+      "level2": "Level 2: Evolution",
+      "level3": "Level 3: Achievement",
+      "level4": "Level 4: Expansion",
+      "level5": "Level 5: Future"
+    },
+    "mission": {
+      "text": "Our mission is to support businesses to navigate and harness the transformative potential of generative AI."
+    },
+    "sec3": {
+      "text": "Our journey began in 2009"
+    },
+    "story": {
+      "title": "time line",
+      "video_label": "Watch the full journey",
+      "titleVideo": "Our ambition is managed within a calculated timeframe."
+    },
+    "ceo": {
+      "title": "CEO's Message",
+      "quote": "An approach that embodies the vision... and immortalizes the impact"
+    },
+    "governance": {
+      "title": "Corporate Governance",
+      "cta": "Contact the Corporate Resources team"
+    },
+    "values": {
+      "title": "Our values",
+      "items": [
+        {
+          "title": "People",
+          "desc": "Everything we do ultimately impacts people. We prioritize human-centric approaches."
+        },
+        {
+          "title": "Continuous Improvement",
+          "desc": "We constantly iterate, learn, and adapt to stay at the forefront of AI."
+        },
+        {
+          "title": "Time to Value",
+          "desc": "Delivering rapid, tangible results for our partners without compromising quality."
+        },
+        {
+          "title": "Integrity",
+          "desc": "We build trust through transparency, ethical AI, and honest partnerships."
+        }
+      ]
+    },
+    "teamTitle": "Behind CopilotHQ",
+    "team": [
+      {
+        "name": "James Wright",
+        "role": "Managing Director",
+        "image": "/about/IMG_0547_JPG.avif",
+        "desc": "James, a visionary director with over 30 years of industry experience, combines strategic leadership and expertise in translating macro trends into successful business strategies."
+      },
+      {
+        "name": "Brent Lupton",
+        "role": "General Manager",
+        "image": "/about/eM7tpT9ZNwAJzvD1qsJSxLyGCMg.avif",
+        "desc": "Brent is a digital transformation leader. As an AI advisor, he helps clients use technology and strategy to achieve operational excellence."
+      },
+      {
+        "name": "Adi Rudraraju",
+        "role": "AI Consultant",
+        "image": "/about/IMG_0570_JPG.avif",
+        "desc": "Adi helps enterprises leverage and build, with an AI-first mindset through consulting and development while solving business problems in AI and Digital marketing."
+      },
+      {
+        "name": "Christopher Greyvenstein",
+        "role": "AI Marketing Specialist",
+        "image": "/about/DSCF0428_Copy.avif",
+        "desc": "Christopher, CopilotHQ’s youngest mind, engineer’s solutions that empower businesses to turn disruption into competitive advantage and lasting growth."
+      },
+      {
+        "name": "Natalie Gjokmarkovic",
+        "role": "Product & Automation Specialist",
+        "image": "/about/Image (6) (1)_edited.avif",
+        "desc": "Nat blends UX design and automation to build intuitive, scalable digital systems. With a technical background and Big 4 experience, she delivers seamless user journeys and intelligent workflows that drive performance."
+      },
+      {
+        "name": "Miranda Agisha",
+        "role": "Marketing Specialist",
+        "image": "/about/IMG_0400.avif",
+        "desc": "Miranda drives marketing at CopilotHQ. Drawing on her experience with Tech, Telco, and FMCG companies, she ensures that marketing strategies and materials stay at the forefront of the AI industry."
+      }
+    ],
+    "clientLogos": {
+      "title": "Proudly worked with",
+      "logos": [
+        "Trilogy Funds",
+        "ASUS",
+        "Australian Government",
+        "Kinargo",
+        "Maximum",
+        "CONCEPT",
+        "OMNI",
+        "Treasury",
+        "Gearhouse",
+        "SHADOWMASK",
+        "Teridome",
+        "MGA",
+        "JMP",
+        "Mayfair",
+        "TITAN",
+        "Central",
+        "HUD",
+        "Verve",
+        "LITE",
+        "SAFE"
+      ]
+    }
+  },
+
+  "CaseStudies": {
+    "title": "Our Case Studies",
+    "cases": {
+      "government": {
+        "sub": "CASE STUDY",
+        "title": "Australian Government",
+        "agent": "Meeting Minutes Agent",
+        "highlight": "AI Meeting Agent saves hours and protects confidentiality",
+        "desc": "We developed an AI meeting agent for Housing Australia to transcribe, summarise, and generate action items."
+      },
+
+      "cleaning": {
+        "sub": "CASE STUDY",
+        "title": "Cleaning and Restoration Business",
+        "agent": "AI Sales Coach",
+        "highlight": "AI Sales Coach increases win rate",
+        "desc": "We helped Alfaclean improve sales conversations with an AI Sales Coach that gives real-time feedback."
+      },
+
+      "plumbing": {
+        "sub": "CASE STUDY",
+        "title": "Plumbing Business",
+        "agent": "AI Operations Agent",
+        "highlight": "AI Assistant saves admin time by 15 hours a week",
+        "desc": "We helped No Bull Plumbing automate job requests and save hours of admin work."
+      },
+
+      "payroll": {
+        "sub": "CASE STUDY",
+        "title": "Australian Payroll Company",
+        "agent": "AI Chat Agent",
+        "highlight": "AI Chat Agent drives lead generation",
+        "desc": "We helped Australian Payroll Association manage website traffic with an AI chat agent."
+      },
+
+      "care": {
+        "sub": "CASE STUDY",
+        "title": "Care and Support Organisation",
+        "agent": "AI Assistant",
+        "highlight": "AI Assistant improves care response times",
+        "desc": "We helped Partner in Your Care support staff with instant access to verified information."
+      },
+
+      "wealth": {
+        "sub": "CASE STUDY",
+        "title": "Wealth Management Company",
+        "agent": "Discovery Workshop",
+        "highlight": "AI discovery session for investment firm",
+        "desc": "We developed an AI roadmap for Ord Minnett to support governance and operations."
+      }
+    }
+  },
+  "CaseStudiesHero": {
+    "title": "Case Studies",
+    "desc": "Dive into real life stories of how companies across various industries are using AI agents to boost productivity and spark innovation.",
+    "button": "Talk to an expert"
+  },
+
+  "valueBanner": {
+    "title": "We thrive on delivering value to our clients",
+    "item1": {
+      "line1": "Minimum 3x Productivity",
+      "line2": "Improvements"
+    },
+    "item2": {
+      "line1": "Demonstrated",
+      "line2": "Short-term ROI"
+    },
+    "item3": {
+      "line1": "100% Customer",
+      "line2": "Satisfaction"
+    }
+  },
+  "heroSection": {
+    "description": "Our projects are not built in isolation from our vision."
+  },
+  "TeamSection": {
+    "cursorText": "Pull Me",
+    "mainQuote": "StarTime always ready to start to take risks. Here, risk-taking is not only welcomed but encouraged.",
+    "subText": "Because we’re independent, we do things our way. United by way of some corporate overlord, we can experiment with new processes and techniques to create pure, original, and exciting solutions.",
+    "roles": {
+      "UI/UX Designer": "UI/UX Designer",
+      "UI/UX, Motion Designer": "UI/UX, Motion Designer",
+      "Sales Manager": "Sales Manager",
+      "Graphic Designer": "Graphic Designer",
+      "Project Manager": "Project Manager",
+      "Webflow Developer": "Webflow Developer",
+      "Copywriter": "Copywriter"
+    }
+  },
+  "OurServices": {
+    "title": "Help companies from all over the world with tailor-made solutions. With each project.",
+    "hireUs": "Hire Us",
+    "description": "Keeping in mind the company's experience and desire to be continuously improved, we became experts of innovative projects in the design and consulting spheres. Because of applying the best international practices and home grown software.",
+    "viewMore": "View More",
+    "items": {
+      "webDesign": {
+        "title": "Web Design",
+        "desc": "3D modeling design services from StarTime are the perfect way to add that extra dimension to your project. StarTime can bring your vision to life in a way that is both creative and realistic."
+      },
+      "mobileApp": {
+        "title": "Mobile App Design",
+        "desc": "3D modeling design services from StarTime are the perfect way to add that extra dimension to your project. StarTime can bring your vision to life in a way that is both creative and realistic."
+      },
+      "webDev": {
+        "title": "Web Development",
+        "desc": "3D modeling design services from StarTime are the perfect way to add that extra dimension to your project. StarTime can bring your vision to life in a way that is both creative and realistic."
+      }
+    }
+  },
+  "Hero": {
+    "title": "Accelerate your business with AI",
+    "subtitle": "Your full service AI advisory and development partner",
+    "button": "Discover"
+  },
+  "Mission": {
+    "part1": {
+      "title": "From the Heart of Najd",
+      "desc": "Land of pride and unyielding will, where resolve takes root, identity finds its voice, and every Saudi dream is signed with dignity and ascent."
+    },
+    "part2": {
+      "title": "From the Legacy of Diriyah",
+      "desc": "The cradle of the nation, the origin of the story, the compass of belonging. Its alleys cradle the tales, its walls echo sovereignty, and from its soil, vision blossoms and roots deepen."
+    }
+  },
+  "ChangingText": {
+    "fullText": "Born from roots that pulse with authenticity, We were born to soar"
+  },
+  "Services": {
+    "title": "Our services",
+    "subtitle": "We help clients through ",
+    "highlight": "every step",
+    "end": " of their AI journey",
+    "categories": {
+      "advisory": "Strategic Advisory",
+      "dev": "Development & Deployment",
+      "data": "Dashboards, Data & Insights",
+      "managed": "Managed Services"
+    },
+    "items": {
+      "advisory": [
+        "AI Strategy Development",
+        "Adoption Roadmap",
+        "Risk and Governance",
+        "People Readiness",
+        "Change Management"
+      ],
+      "dev": [
+        "Solution Design",
+        "Custom Development",
+        "Product Deployment",
+        "Agentic Solutions"
+      ],
+      "data": [
+        "Data Strategy",
+        "Data Cleansing",
+        "Analytics",
+        "Visualisations and Dashboards"
+      ],
+      "managed": ["Monitoring and Maintenance", "Support and Upgrades"]
+    }
+  },
+  "Benefits": {
+    "title": "Our Portfolio",
+    "highlight": "We invest passionately in high-potential sectors",
+    "cta": "View All Projects"
+  },
+  "Cases": {
+    "title": "Our case studies",
+    "subtitle": "Your vision, our AI expertise",
+    "items": [
+      {
+        "category": "CASE STUDY",
+        "client": "Australian Government",
+        "project": "Meeting Minutes Agent",
+        "title": "AI Meeting Agent saves hours and protects confidentiality",
+        "description": "We developed an AI meeting agent for Housing Australia to transcribe, summarise, and generate action items, helping teams save time, reduce costs, and maintain confidentiality."
+      },
+      {
+        "category": "CASE STUDY",
+        "client": "Wealth Management Company",
+        "project": "Discovery Workshop",
+        "title": "AI discovery session for stockbroking and investment firm",
+        "description": "We developed an AI roadmap for Ord Minett, a stockbroking and investment firm and are now building AI agents to support policy, governance, and company-wide adoption."
+      },
+      {
+        "category": "CASE STUDY",
+        "client": "Plumbing Business",
+        "project": "AI Operations Agent",
+        "title": "AI Assistant saves admin time by 15 hours a week",
+        "description": "We helped No Bull Plumbing save 3 hours a day by automating 150 weekly job requests. Our AI now handles the admin, allowing the team to focus on customers faster, smoother, and stress-free."
+      },
+      {
+        "category": "CASE STUDY",
+        "client": "Australian Government",
+        "project": "Meeting Minutes Agent",
+        "title": "AI Meeting Agent saves hours and protects confidentiality",
+        "description": "We developed an AI meeting agent for Housing Australia to transcribe, summarise, and generate action items, helping teams save time, reduce costs, and maintain confidentiality."
+      }
+    ]
+  },
+
+  "WhyChoose": {
+    "tripleS": {
+      "title": "Triple S Arena ",
+      "subtitle": "Business Management with Zero-Operational Mistaking",
+      "description": "From innovation to closure, our projects are managed through a methodology rooted in Saudi identity and executed with uncompromising global standards, powered by our intelligent ecosystem, where every step is automated, quality is enforced, and reliability is preserved. Through Triple S Arena, we ensure error‑free operations, stronger project management, and seamless experience for our partners, clients, suppliers, and team members."
+    },
+    "methodology": {
+      "title": "Our Methodology & Partnership Sustainability",
+      "text": "Every day we grow with our network of partners whom we are proud of. This motivates us to always work with them with love, leading impact and inspiration in business communities.",
+      "ctaText": "Be part of our community",
+      "ctaButton": "Contact Us Now"
+    },
+    "common": {
+      "learnMore": "Learn More"
+    }
+  },
+  "ActionSection": {
+    "workTitle": "How We Work",
+    "workDescLines": [
+      "Our growth is driven by collaboration and sustainable partnerships.",
+      "Day after day, our valued network of partners continues to grow, fueling our commitment to work side by side in shaping impact and inspiring business communities."
+    ],
+    "workBtn": "Contact Us",
+    "workJoin": "Join Our Community",
+    "teamTitle": "Our Team",
+    "teamSubtitle": "A workplace driven by passion… and built to create impact.",
+    "teamDesc": "We cultivate a work environment that inspires creativity, embraces talent, and empowers every individual to excel. We operate as one team with a shared spirit, collaborating, celebrating achievements, and giving each member the space to grow and lead their own impact. We’re always looking for people who share our ambition and can elevate our journey.",
+    "teamBtn": "Join Us"
+  },
+
+  "Acknowledged": {
+    "title": "Acknowledged by:"
+  },
+  "Contact": {
+    "title": "Let's get started!",
+    "subtitle": "Upgrade your business with AI solutions designed to scale with your needs. Together, we can turn challenges into opportunities!",
+    "firstName": "First name",
+    "lastName": "Last name",
+    "email": "Email",
+    "phone": "Phone",
+    "interest": "I am interested in..",
+    "selectPlaceholder": "Select an option",
+    "message": "Message",
+    "privacy": "I agree to the privacy policy",
+    "submit": "Submit",
+    "interests": [
+      "AI Strategy & Consulting",
+      "Custom AI Development",
+      "Data Analytics",
+      "Process Automation",
+      "Other"
+    ]
+  },
+  "TransformationSection": {
+    "title": "We Connect Everyone",
+    "description": "We care deeply about our partners, creating meaningful experiences that leave a lasting imprint on our communities."
+  },
+  "VisionReality": {
+    "downloadBtn": "Download the Profile",
+    "items": [
+      {
+        "title": "We Create Events",
+        "description": "We don’t wait for the experience... we ignite it; we don’t replicate the market... we reshape it. Every event we produce is an extension of an authentic Saudi vision.",
+        "footer": "A passion that never fades"
+      },
+      {
+        "title": "We Host B2B",
+        "description": "We pave the ground for them. We don't merely host, we redefine hosting. We transform spaces into platforms of connection.",
+        "footer": "A pulse that never fades"
+      },
+      {
+        "title": "Organize Private Events",
+        "description": "We embody our partners' aspirations, design the experience, and manage each moment with confidence and lawless execution.",
+        "footer": "A balance that never falters"
+      },
+      {
+        "title": "Manage Community Events",
+        "description": "We move the moment from within the community, making interaction to be vibrant, alive, and inspiring.",
+        "footer": "An Experience that awakens emotion"
+      },
+      {
+        "title": "Produce Events",
+        "description": "We compose it. We produce events with creative pulse and operational mastery, where every detail is measured.",
+        "footer": "Details that speak perfection"
+      }
+    ]
+  },
+  "ResponsibleAI": {
+    "contactBtn": "Contact the Corporate Relations Team"
+  },
+  "ContactForm": {
+    "title": "Contact the Corporate Relations Team",
+    "fields": {
+      "entity": "Entity / Organization",
+      "name": "Name",
+      "position": "Position / Title",
+      "phone": "Phone Number",
+      "email": "Email Address",
+      "message": "Message",
+      "attachments": "Attachments"
+    },
+    "submit": "Submit"
+  },
+  "portfolio": {
+    "title": "Portfolio Projects",
+    "items": [
+      { "name": "Future City Development", "img": "/about/DSCF0428_Copy.avif" },
+      { "name": "Clean Energy Initiative", "img": "/about/DSCF0428_Copy.avif" },
+      { "name": "Smart Logistics System", "img": "/about/DSCF0428_Copy.avif" },
+      { "name": "Future City Development", "img": "/about/DSCF0428_Copy.avif" },
+      { "name": "Clean Energy Initiative", "img": "/about/DSCF0428_Copy.avif" },
+      { "name": "Smart Logistics System", "img": "/about/DSCF0428_Copy.avif" },
+      { "name": "Future City Development", "img": "/about/DSCF0428_Copy.avif" },
+      { "name": "Clean Energy Initiative", "img": "/about/DSCF0428_Copy.avif" }
+    ],
+    "description": "Portfolio Projects"
+  },
+  "caseStudies": {
+    "title": "Focus",
+    "cards": [
+      {
+        "highlight": "Smart Logistics",
+        "img": "/image11.jpeg"
+      },
+      {
+        "highlight": "Future Energy",
+        "img": "/image11.jpeg"
+      },
+      {
+        "highlight": "Future Energy",
+        "img": "/image11.jpeg"
+      },
+      {
+        "highlight": "Future Energy",
+        "img": "/image11.jpeg"
+      },
+      {
+        "highlight": "Future Energy",
+        "img": "/image11.jpeg"
+      },
+      {
+        "highlight": "Future Energy",
+        "img": "/image11.jpeg"
+      },
+      {
+        "highlight": "Future Energy",
+        "img": "/image11.jpeg"
+      },
+      {
+        "highlight": "Future Energy",
+        "img": "/image11.jpeg"
+      },
+      {
+        "highlight": "Future Energy",
+        "img": "/image11.jpeg"
+      },
+      {
+        "highlight": "Future Energy",
+        "img": "/image11.jpeg"
+      },
+      {
+        "highlight": "Future Energy",
+        "img": "/image11.jpeg"
+      },
+      {
+        "highlight": "Future Energy",
+        "img": "/image11.jpeg"
+      },
+      {
+        "highlight": "Future Energy",
+        "img": "/image11.jpeg"
+      },
+      {
+        "highlight": "Future Energy",
+        "img": "/image11.jpeg"
+      },
+      {
+        "highlight": "Future Energy",
+        "img": "/image11.jpeg"
+      },
+      {
+        "highlight": "Future Energy",
+        "img": "/image11.jpeg"
+      }
+    ]
+  },
+  "categories": {
+    "title": "Accelerate everything!",
+    "description": "Our AI solutions prepare your business for tomorrow’s challenges today.",
+    "items": [
+      { "name": "Sales", "img": "/Portfilio/Team Meeting.avif" },
+      { "name": "Marketing", "img": "/Portfilio/Creative Agency_edited.avif" },
+      {
+        "name": "Customer Service",
+        "img": "/Portfilio/Sales Agent_edited.avif"
+      },
+      { "name": "Operations", "img": "/Portfilio/Shared Office_edited.avif" },
+      {
+        "name": "Human Resources",
+        "img": "/Portfilio/Friendly Business Team_edited.avif"
+      },
+      {
+        "name": "Procurement",
+        "img": "/Portfilio/AdobeStock_267589568_edited.avif"
+      },
+      { "name": "Management", "img": "/Portfilio/Interview.avif" }
+    ]
+  },
+  "Footer": {
+    "logoAlt": "Startime Logo",
+    "company": "Company",
+    "services": "Services",
+    "resources": "Resources",
+    "home": "Home",
+    "Discover": "Discover",
+    "Solutions": "Solutions",
+    "Portfolio": "Portfolio",
+    "Contact": "Contact",
+    "getStarted": "How to Get Started?",
+    "startups": "Startups and Investors",
+    "caseStudy": "Case Study",
+    "newsletter": "AI Newsletter",
+    "email": "email",
+    "description": "We create and organize innovative events with a visionary approach, supporting this by adopting the values of creativity and integration services to deliver impactful business meeting solutions.",
+    "news": "News",
+    "privacy": "Privacy Policy",
+    "phone": "Tel",
+    "brisbane": "Brisbane",
+    "sydney": "Sydney",
+    "addressLine1": "Riyadh 12341 3507",
+    "addressLine2": "Saudi Arabia"
+  },
+  "GlobeSection": {
+    "mainTitle": "ًWe Need To",
+    "point1": "Leadership",
+    "point1Sub": "With bold strategies",
+    "point2": "Inspiration",
+    "point2Sub": "For communities and stakeholders",
+    "point3": "Partnership",
+    "point3Sub": "By emphasizing our commitment to building a sustainable world",
+    "point4": "Solutions",
+    "point4Sub": "With initiatives that achieve the desired impact",
+    "point5": "Connection",
+    "point5Sub": "About the most important global issues"
+  },
+  "contact": {
+    "title": "Connecting with Everyone",
+    "highlight": "We are here to answer your questions and build sustainable partnerships",
+    "subtext": "Our specialized team is ready to provide technical support and corporate consultations around the clock."
+  },
+  "about": {
+    "title": "StarTime",
+    "subtitle": "Incubator of Innovation and Creativity",
+    "feature1": "First feature text describing power and innovation",
+    "feature2": "Second feature text showing future vision",
+    "feature3": "Third feature text about impact and sustainability"
+  },
+  "Team": {
+    "title": "Team & Excellence",
+    "hover_cta": "Connect via LinkedIn",
+    "members": [
+      {
+        "id": 1,
+        "name": "Laila Hassan",
+        "role": "Creative Director",
+        "img": "/about/IMG_0570_JPG.avif",
+        "color": "bg-blue-600"
+      },
+      {
+        "id": 2,
+        "name": "Omar Khaled",
+        "role": "Lead Developer",
+        "img": "/about/IMG_0570_JPG.avif",
+        "color": "bg-green-600"
+      },
+      {
+        "id": 3,
+        "name": "Sara Mahmoud",
+        "role": "Product Manager",
+        "img": "/about/IMG_0570_JPG.avif",
+        "color": "bg-yellow-500"
+      },
+      {
+        "id": 4,
+        "name": "Youssef Ali",
+        "role": "UI Designer",
+        "img": "/about/IMG_0570_JPG.avif",
+        "color": "bg-purple-600"
+      },
+      {
+        "id": 5,
+        "name": "Youssef Ali",
+        "role": "UI Designer",
+        "img": "/about/IMG_0570_JPG.avif",
+        "color": "bg-purple-600"
+      },
+      {
+        "id": 6,
+        "name": "Youssef Ali",
+        "role": "UI Designer",
+        "img": "/about/IMG_0570_JPG.avif",
+        "color": "bg-purple-600"
+      },
+      {
+        "id": 7,
+        "name": "Youssef Ali",
+        "role": "UI Designer",
+        "img": "/about/IMG_0570_JPG.avif",
+        "color": "bg-purple-600"
+      },
+      {
+        "id": 8,
+        "name": "Youssef Ali",
+        "role": "UI Designer",
+        "img": "/about/IMG_0570_JPG.avif",
+        "color": "bg-purple-600"
+      }
+    ]
+  },
+  "TripleSArena": {
+    "hero": {
+      "title": "Triple S Arena",
+      "subtitle": "The Digital Operations Arena",
+      "description": "A fully in-house developed platform that powers our daily operations with seamless precision, transforming them into an integrated digital ecosystem; It serves as a professional digital operations arena that unifies teams, projects, vendors, and clients within a single platform, ensuring flawless execution, robust governance, and a smooth, consistent experience for every user."
+    },
+    "features": {
+      "items": [
+        {
+          "title": "Digital Transformation Alignment",
+          "desc": "Modernizing operational workflows into a fully automated, end-to-end ecosystem that unifies all functions within a single intelligent platform."
+        },
+        {
+          "title": "Operational Error Reduction",
+          "desc": "Streamlining processes through automation, role-based access control, and proactive smart alerts to achieve near-zero execution errors."
+        },
+        {
+          "title": "Governance & Compliance Enablement",
+          "desc": "Standardizing procedures, enforcing permission frameworks, and activating smart approval cycles to ensure transparency, accountability, and regulatory alignment."
+        },
+        {
+          "title": "Enhanced Stakeholder Experience",
+          "desc": "An intelligent, experienced-driven CRM that delivers seamless communication, precise personalization, and a frictionless journey for every stakeholder."
+        }
+      ]
+    },
+    "login": {
+      "title": "Login",
+      "cards": {
+        "team": "StarTime Team",
+        "clients": "Client & Partner Portal",
+        "vendors": "Vendor & Contractor Portal"
+      }
+    },
+
+    "footer": {
+      "contactTitle": "Contact Us",
+      "email": "info@startime.sa",
+      "phone": "920010500",
+      "supportText": "Request Technical Support",
+      "clickHere": "Click Here",
+      "policyLink": "View Cybersecurity Policy"
+    },
+    "cyberPolicy": {
+      "policyTitle": "Triple S Arena – Data & Systems Protection Policy",
+      "sections": [
+        {
+          "title": "Introduction",
+          "content": "Startime is committed to implementing the highest cybersecurity standards to safeguard all data, systems, and operational processes within Triple S Arena. This commitment aligns with the requirements of the National Cybersecurity Authority (NCA) and internationally recognized frameworks. This policy aims to ensure confidentiality, integrity, and availability of information, while providing a secure digital environment that supports Startime’s operational excellence and digital transformation objectives."
+        },
+        {
+          "title": "Scope",
+          "content": "This policy applies to all Triple S Arena users, including employees, clients, partners, vendors, and contractors. It also covers all data stored or processed within the system, all connected infrastructure, and all access, modification, sharing, and workflow activities performed through the platform."
+        },
+        {
+          "title": "Data Protection & Privacy",
+          "content": "Startime treats data as a critical organizational asset. All information is classified according to its sensitivity, including financial data, contractual records, operational files, and personal information related to employees, clients, and vendors. The platform enforces strict privacy controls, including encryption of data in transit and at rest, restricted access based on user roles, and compliance with national privacy regulations."
+        },
+        {
+          "title": "Identity & Access Management",
+          "content": "Triple S Arena employs a robust Role-Based Access Control (RBAC) model to ensure that each user receives only the permission required for their role. Multi-Factor Authentication is mandatory for all users, and access rights are reviewed regularly. All login, modification, deletion, and sharing activities are logged in a centralized audit trail."
+        },
+        {
+          "title": "Account & Session Security",
+          "content": "Startime enforces strong password policies, periodic password renewal, automatic session timeout, and continuous monitoring of failed login attempts. Conditional access controls are applied based on device type and geographic location."
+        },
+        {
+          "title": "System & Infrastructure Security",
+          "content": "The platform uses industry-standard encryption technologies, including TLS 1.3 for data in transit and AES-256 for data at rest. Systems undergo regular security updates, continuous vulnerability monitoring, and segmentation of sensitive environments."
+        },
+        {
+          "title": "Incident Response",
+          "content": "Startime maintains a comprehensive Incident Response Plan that outlines procedures for reporting, analyzing, documenting, and resolving cybersecurity incidents. In the event of a breach, the organization takes immediate action to contain the threat and coordinate with relevant authorities."
+        },
+        {
+          "title": "Awareness & Training",
+          "content": "Startime provides ongoing cybersecurity training to all employees, reinforcing awareness of cyber threats and safe digital practices. Periodic phishing simulations and security drills are conducted to ensure readiness."
+        },
+        {
+          "title": "User Responsibilities",
+          "content": "All users are responsible for protecting their login credentials, refraining from unauthorized data sharing, reporting unusual activity, and complying with all security and acceptable-use policies."
+        },
+        {
+          "title": "Compliance & Review",
+          "content": "Startime adheres fully to the cybersecurity controls mandated by the NCA, as well as international standards such as ISO 27001 and NIST CSF. This policy is reviewed periodically to ensure alignment with evolving threats."
+        }
+      ]
+    }
+  },
+  "Home": {
+    "news": {
+      "readMore": "Read More",
+      "items": [
+        {
+          "id": 1,
+          "title": "Startime Launches Enhanced Triple S Arena Version",
+          "brief": "A major milestone in digitizing operational workflows using AI technologies to ensure maximum precision.",
+          "content": "Startime announced today the launch of the biggest update for its smart platform, Triple S Arena. The new update focuses on enhancing user experience and automating supply chains and logistics, reducing human error by up to 95%. This development aligns with the company's vision to support digital transformation in Saudi Arabia in accordance with Vision 2030."
+        },
+        {
+          "id": 2,
+          "title": "Strategic Partnership to Enhance Data Security",
+          "brief": "A new technical collaboration aimed at implementing advanced encryption protocols to protect stakeholder data.",
+          "content": "As part of its commitment to the highest cybersecurity standards, Startime has entered into a collaboration agreement with leading digital security firms to upgrade Triple S Arena’s infrastructure. The update includes Multi-Factor Authentication (MFA) and AES-256 data encryption, ensuring a secure and reliable environment for all partners and clients."
+        },
+        {
+          "id": 3,
+          "title": "Startime Wins Digital Innovation Award",
+          "brief": "Recognizing its efforts in developing smart enterprise solutions, the company received the 2026 Digital Operations Excellence Award.",
+          "content": "Startime is proud to announce it has received the prestigious Digital Innovation Award. Triple S Arena was selected as the best technical solution for managing complex operations, thanks to its unique ability to connect teams, vendors, and clients in a single, transparent, and fast ecosystem."
+        }
+      ]
+    }
+  },
+  "SIMF": {
+    "hero": {
+      "patronage": "Under the Patronage of His Royal Highness",
+      "patronName": "His Royal Highness Prince Khalid bin Salman bin Abdulaziz Al Saud,",
+      "patronRole": "Minister of Defense",
+      "title": "Saudi International Maritime Forum",
+      "tagline": "Shaping the Future of Seabed Security and Supply Chain Resilience in an Evolving Global Landscape",
+      "meta": {
+        "date": "23–25 November 2026",
+        "location": "Sofitel Hotel & Convention Center, Riyadh",
+        "supervision": "Under the Supervision of the Ministry of Defense",
+        "organizer": "Organized by the Royal Saudi Naval Forces"
+      }
+    },
+    "videobanner": {
+      "playVideo": "Play video",
+      "registrationClosesIn": "Registration Closes In",
+      "units": {
+        "months": "MONTHS",
+        "days": "DAYS",
+        "hours": "HOURS",
+        "minutes": "MINUTES",
+        "seconds": "SECONDS"
+      },
+      "registerNow": "Partnerships",
+      "contactUs": "Contact Us"
+    },
+    "abouttheforum": {
+      "eyebrow": "About the Forum",
+      "heading": "A Global Saudi Platform Advancing",
+      "heading1": "Dialogue and Cooperation",
+      "heading2": "in Maritime Security",
+      "logoAlt": "Saudi International Maritime Forum",
+      "imageAlt": "Delegates at the Saudi International Maritime Forum",
+      "paragraph2text": "The Saudi International Maritime Forum is a high-level international event that brings together leaders, senior officials, and experts to exchange insights and expertise and foster a shared global understanding of the future of maritime security amid accelerating geopolitical and technological transformations. It reflects Saudi Arabia’s strategic role in strengthening maritime stability and supporting a sustainable global economy.",
+      "units": {
+        "months": "MONTHS",
+        "days": "DAYS",
+        "hours": "HOURS",
+        "minutes": "MINUTES",
+        "seconds": "SECONDS"
+      },
+      "registerNow": "Partnerships",
+      "contactUs": "Contact Us"
+    },
+    "evolutiontimelinepart1": {
+      "eyebrow": "THE STAKES",
+      "heading": "Key Milestones in the Evolution of the Global Maritime Security Agenda",
+      "lead": "The seabed and maritime corridors carry the world's energy, trade and data — and the threats against them are rising fast.",
+      "currentEdition": "Current Edition",
+      "archiveLabel": "View the full archive (2019 · 2022 · 2024)",
+      "milestones": {
+        "2019": {
+          "location": "Riyadh, Saudi Arabia",
+          "title": "Securing Strategic Maritime Corridors"
+        },
+        "2022": {
+          "location": "Jeddah, Saudi Arabia",
+          "title": "Protecting Naval Units & Coastal Sites from Unmanned-System Threats"
+        },
+        "2024": {
+          "location": "Dhahran, Saudi Arabia",
+          "title": "Maritime Security in the Age of Artificial Intelligence"
+        },
+        "2026": {
+          "location": "Riyadh, Saudi Arabia",
+          "title": "The Future of Seabed Security & Maritime Supply Chains"
+        }
+      }
+    },
+    "evolutiontimelinepart2": {
+      "eyebrow": "TARGET AUDIENCE",
+      "heading": "A Global Saudi Platform for Dialogue & Cooperation on Maritime Security",
+      "lead": "The Saudi International Maritime Forum is a high-level global event dedicated to anticipating the future of maritime security and safeguarding critical sea lanes and supply chains amid rapidly evolving global dynamics — strengthening maritime stability and protecting the critical infrastructure beneath the surface and in the deep seabed.",
+      "stats": {
+        "countries": "Participating Countries",
+        "leaders": "Senior Leaders & Government Officials",
+        "speakers": "International Speakers",
+        "sponsors": "Participating Organizations"
+      },
+      "cards": {
+        "government": {
+          "title": "Government Leaders & Decision-Makers",
+          "bullets": [
+            "Ministers of Defense, Energy, Communications, and Transport.",
+            "Chiefs of Staff, Deputy Chiefs, and Naval Force Commanders.",
+            "Heads of Maritime Security Authorities.",
+            "Port Authorities and Maritime Regulatory Officials.",
+            "Senior Security and Military Officials."
+          ]
+        },
+        "organizations": {
+          "title": "International & Regional Organizations",
+          "bullets": [
+            "International Maritime Organization (IMO).",
+            "Combined Maritime Forces (CMF).",
+            "World Shipping Council (WSC).",
+            "International Association of Ports and Harbors (IAPH).",
+            "International Cybersecurity Centers.",
+            "Energy and Maritime Communications Organizations."
+          ]
+        },
+        "military": {
+          "title": "Military & Security Organizations",
+          "bullets": [
+            "Naval Forces and Border Guard Forces.",
+            "Air Forces and Industrial Security Units.",
+            "Maritime Command and Control Centers.",
+            "Counter-Unmanned Systems Units.",
+            "Maritime Emergency Response Centers."
+          ]
+        }
+      }
+    },
+    "metricsdashboard": {
+      "eyebrow": "Saudi International Maritime Forum",
+      "heading": "The World Runs Beneath the Sea",
+      "lead": "The seabed and maritime corridors carry the world's energy, trade and data — and the threats against them are rising fast.",
+      "caption": "Auto-sliding cards • 12 live indicators • Drag or wait to discover more"
+    },
+    "ambitiousgoals": {
+      "eyebrow": "AMBITIOUS GOALS",
+      "heading": "Ambitious Goals...",
+      "lead": "To strengthen an integrated maritime security ecosystem that supports international efforts to protect critical seabed infrastructure, enhance the resilience of energy and trade supply chains, contribute to global economic stability, and align with the objectives of Saudi Vision 2030. ",
+      "moreLabel": "Learn More"
+    },
+    "valueproposition1": {
+      "eyebrow": "B2G MEETINGS",
+      "heading": "Connecting Government Decision-Makers with Advanced Maritime Solutions",
+      "lead": "Exclusive meetings connecting government decision-makers with leading maritime technology providers to drive collaboration and innovation.",
+      "introHeadline" : "A Dedicated Platform Connecting Advanced Solutions with Decision-Makers",
+      "introParagraphs": [
+        "The Business-to-Government (B2G) Meetings are a dedicated engagement track within the Saudi International Maritime Forum, designed to facilitate structured, one-to-one meetings between government and military entities and leading national and international providers of advanced maritime technologies.",
+        "These meetings are conducted through a professionally managed program of pre-scheduled bilateral sessions, carefully matched to align the operational requirements of government and military organizations with the innovative solutions offered by participating companies."
+      ],
+      "ctaTitle": "Secure Your",
+      "ctaTitle2": " B2G Meeting",
+      "ctaTitle3": " Opportunities",
+      "ctaLead": "Gain direct access to high-value meetings with government buyers, defense authorities, and strategic partners to discuss future cooperation and business opportunities.",
+      "ctaLabel": "Apply for B2G Meeting"
+    },
+    "valueproposition2": {
+      "eyebrow": "WHY PARTICIPATE",
+      "heading": "Main Sessions",
+      "lead": "Three Sessions Covering the Key Strategic Dimensions"
+    },
+    "leadingpurposeexpertise": {
+      "eyebrow": "ORGANIZING ENTITY",
+      "heading": "Partners & Sponsors",
+      "lead": "The Forum is supported by and brings together government entities, as well as national and international organizations, whose expertise reinforces the Kingdom's role in the global maritime security ecosystem and highlights the importance of collaboration in addressing the rapid transformations shaping this vital sector.",
+      "caption": "Auto-sliding cards • 12 live indicators • Drag or wait to discover more"
+    },
+    "latestnews": {
+      "eyebrow": "LATEST NEWS",
+      "heading": "Latest News & Articles",
+      "lead": "Stay up to date with the latest news, expert insights, industry developments, and key events shaping the global maritime security landscape.",
+      "readMoreLabel": "Read More...",
+      "viewAllLabel": "View all news"
+    },
+    "registeryourparticipation": {
+      "eyebrow": "Register Your Participation",
+      "heading": "Join the Saudi International Maritime Forum 2026",
+      "lead": "Be Part of the Leading Platform Shaping the Future of Global Maritime Security",
+      "emailPlaceholder": "Enter Your Email Address",
+      "submitLabel": "Register Now"
+    },
+    "metrics": {
+      "title": "The 4th Saudi International Maritime Forum",
+      "subtitle": "The Future of Seabed Security and Supply Chains in a Changing Global Environment",
+      "cards": [
+        {
+          "value": "1.4 Million",
+          "title": "Kilometers",
+          "description": "of Subsea Cables"
+        },
+        {
+          "value": "USD 19 Trillion",
+          "title": "Annually",
+          "description": "in Financial Transactions Transmitted Across the Seas"
+        },
+        {
+          "value": "80%",
+          "title": "of Global Goods",
+          "description": "Are Transported by Sea"
+        },
+        {
+          "value": "100 Million",
+          "title": "Shipping Containers",
+          "description": "Move Through Ports Annually"
+        },
+        {
+          "value": "Over 350%",
+          "title": "Increase",
+          "description": "in Shipping Costs in Recent Years"
+        },
+        {
+          "value": "30–50% Increase",
+          "title": "in Transit Times",
+          "description": "Due to Changing Maritime Conditions"
+        },
+        {
+          "value": "Over 50%",
+          "title": "of Global Oil Trade",
+          "description": "Passes Through Maritime Corridors"
+        },
+        {
+          "value": "Over 30%",
+          "title": "of Liquefied Natural Gas",
+          "description": "Is Transported by Sea"
+        },
+        {
+          "value": "Over 900,000",
+          "title": "Kilometers",
+          "description": "of Subsea Pipelines Worldwide"
+        },
+        {
+          "value": "Over 400",
+          "title": "Active Subsea Cables",
+          "description": "Connecting the World’s Continents"
+        },
+        {
+          "value": "Over 200%",
+          "title": "Increase in Maritime Cyber Threats",
+          "description": "Over the Past Five Years"
+        },
+        {
+          "value": "300%",
+          "title": "Increase in Attacks",
+          "description": "on Maritime Infrastructure"
+        }
+      ]
+    },
+    "contactmodal": {
+      "title": "Please fill in the required information.",
+      "subtitle": "Complete the form below and our team will contact you with more information about SIMF.",
+
+      "name": "Name",
+      "namePlaceholder": "Enter your name",
+
+      "organization": "Organization / Company",
+      "organizationPlaceholder": "Enter organization",
+
+      "jobTitle": "Job Title",
+      "jobTitlePlaceholder": "Enter job title",
+
+      "country": "Country",
+
+      "address": "Address",
+      "addressPlaceholder": "Enter your address",
+
+      "telephone": "Telephone",
+
+      "mobile": "Mobile Number",
+
+      "workEmail": "Work Email",
+
+      "website": "Website",
+
+      "message": "Message",
+      "messagePlaceholder": "Write your message",
+
+      "submit": "Submit",
+
+      "successTitle": "Thank you!",
+      "successMessage": "Your request has been received successfully. Our team will contact you shortly.",
+
+      "attachments": "Attachments",
+      "upload": "Upload",
+      "acceptedFormats": "Accepted formats: PDF, DOC, DOCX, JPG, PNG (Max 10 MB)"
+    }
+  }
+}

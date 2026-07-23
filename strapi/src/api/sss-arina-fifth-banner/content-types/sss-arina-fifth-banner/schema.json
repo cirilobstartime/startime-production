@@ -1,0 +1,27 @@
+{
+  "kind": "collectionType",
+  "collectionName": "sss_arina_fifth_banners",
+  "info": {
+    "singularName": "sss-arina-fifth-banner",
+    "pluralName": "sss-arina-fifth-banners",
+    "displayName": "sss_arina_fifth_banner"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {
+    "i18n": {
+      "localized": true
+    }
+  },
+  "attributes": {
+    "policy": {
+      "type": "blocks",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    }
+  }
+}

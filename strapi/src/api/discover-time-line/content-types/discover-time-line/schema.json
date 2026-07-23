@@ -1,0 +1,50 @@
+{
+  "kind": "collectionType",
+  "collectionName": "discover_time_lines",
+  "info": {
+    "singularName": "discover-time-line",
+    "pluralName": "discover-time-lines",
+    "displayName": "discover_time_line"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {
+    "i18n": {
+      "localized": true
+    }
+  },
+  "attributes": {
+    "main_title": {
+      "type": "string",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "timeline_media": {
+      "type": "media",
+      "pluginOptions": {
+        "i18n": {
+          "localized": false
+        }
+      },
+      "multiple": false,
+      "allowedTypes": [
+        "images",
+        "videos"
+      ]
+    },
+    "timeline_element": {
+      "type": "component",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "component": "shared.timeline",
+      "repeatable": true
+    }
+  }
+}

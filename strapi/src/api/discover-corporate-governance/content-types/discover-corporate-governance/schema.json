@@ -1,0 +1,29 @@
+{
+  "kind": "collectionType",
+  "collectionName": "discover_corporate_governances",
+  "info": {
+    "singularName": "discover-corporate-governance",
+    "pluralName": "discover-corporate-governances",
+    "displayName": "discover_Corporate_Governance"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {
+    "i18n": {
+      "localized": true
+    }
+  },
+  "attributes": {
+    "header": {
+      "type": "component",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "component": "shared.shared-title-description",
+      "repeatable": true
+    }
+  }
+}

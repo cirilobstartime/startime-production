@@ -1,0 +1,37 @@
+{
+  "kind": "collectionType",
+  "collectionName": "solution_second_banners",
+  "info": {
+    "singularName": "solution-second-banner",
+    "pluralName": "solution-second-banners",
+    "displayName": "solution_second_banner"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {
+    "i18n": {
+      "localized": true
+    }
+  },
+  "attributes": {
+    "title": {
+      "type": "string",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "cointiner": {
+      "type": "component",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "component": "shared.soluation-num-desc",
+      "repeatable": true
+    }
+  }
+}

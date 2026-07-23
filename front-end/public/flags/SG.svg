@@ -1,0 +1,35 @@
+<svg width="22" height="16" viewBox="0 0 22 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+<defs>
+  <clipPath id="clip">
+    <rect width="22" height="16" rx="2"/>
+  </clipPath>
+</defs>
+
+<g clip-path="url(#clip)">
+  <!-- Background -->
+  <rect width="22" height="8" fill="#EF3340"/>
+  <rect y="8" width="22" height="8" fill="white"/>
+
+  <!-- Crescent -->
+  <circle cx="6.2" cy="4.1" r="2.2" fill="white"/>
+  <circle cx="7.0" cy="4.1" r="1.8" fill="#EF3340"/>
+
+  <!-- Five stars -->
+  <g fill="white">
+    <circle cx="8.9" cy="2.6" r="0.22"/>
+    <circle cx="10.1" cy="3.5" r="0.22"/>
+    <circle cx="9.6" cy="4.9" r="0.22"/>
+    <circle cx="8.2" cy="4.9" r="0.22"/>
+    <circle cx="7.7" cy="3.5" r="0.22"/>
+  </g>
+</g>
+
+<rect
+  x="0.5"
+  y="0.5"
+  width="21"
+  height="15"
+  rx="1.5"
+  stroke="black"
+  stroke-opacity="0.1"/>
+</svg>

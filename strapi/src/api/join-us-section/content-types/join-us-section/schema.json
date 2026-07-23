@@ -1,0 +1,35 @@
+{
+  "kind": "collectionType",
+  "collectionName": "join_us_sections",
+  "info": {
+    "singularName": "join-us-section",
+    "pluralName": "join-us-sections",
+    "displayName": "join_us_section"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {
+    "i18n": {
+      "localized": true
+    }
+  },
+  "attributes": {
+    "title": {
+      "type": "string",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "description": {
+      "type": "text",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    }
+  }
+}

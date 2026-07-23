@@ -1,0 +1,40 @@
+{
+  "kind": "collectionType",
+  "collectionName": "discover_journeys",
+  "info": {
+    "singularName": "discover-journey",
+    "pluralName": "discover-journeys",
+    "displayName": "discover_journey"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {
+    "i18n": {
+      "localized": true
+    }
+  },
+  "attributes": {
+    "full_journey": {
+      "type": "media",
+      "pluginOptions": {
+        "i18n": {
+          "localized": false
+        }
+      },
+      "multiple": false,
+      "allowedTypes": [
+        "videos",
+        "images"
+      ]
+    },
+    "title": {
+      "type": "string",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    }
+  }
+}

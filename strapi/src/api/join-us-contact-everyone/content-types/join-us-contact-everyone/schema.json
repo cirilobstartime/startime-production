@@ -1,0 +1,35 @@
+{
+  "kind": "collectionType",
+  "collectionName": "join_us_contact_everyones",
+  "info": {
+    "singularName": "join-us-contact-everyone",
+    "pluralName": "join-us-contact-everyones",
+    "displayName": "join_us_contact_everyone"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {
+    "i18n": {
+      "localized": true
+    }
+  },
+  "attributes": {
+    "title": {
+      "type": "string",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "body": {
+      "type": "string",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    }
+  }
+}

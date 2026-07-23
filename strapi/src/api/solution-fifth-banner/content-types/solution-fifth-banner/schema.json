@@ -1,0 +1,34 @@
+{
+  "kind": "collectionType",
+  "collectionName": "solution_fifth_banners",
+  "info": {
+    "singularName": "solution-fifth-banner",
+    "pluralName": "solution-fifth-banners",
+    "displayName": "solution_fifth_banner"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {
+    "i18n": {
+      "localized": true
+    }
+  },
+  "attributes": {
+    "Profile_PDF": {
+      "type": "media",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "multiple": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    }
+  }
+}

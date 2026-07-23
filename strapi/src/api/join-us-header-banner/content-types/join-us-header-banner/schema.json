@@ -1,0 +1,40 @@
+{
+  "kind": "collectionType",
+  "collectionName": "join_us_header_banners",
+  "info": {
+    "singularName": "join-us-header-banner",
+    "pluralName": "join-us-header-banners",
+    "displayName": "join_us_header_banner"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {
+    "i18n": {
+      "localized": true
+    }
+  },
+  "attributes": {
+    "tite": {
+      "type": "string",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "background": {
+      "type": "media",
+      "pluginOptions": {
+        "i18n": {
+          "localized": false
+        }
+      },
+      "multiple": false,
+      "allowedTypes": [
+        "images",
+        "files"
+      ]
+    }
+  }
+}
