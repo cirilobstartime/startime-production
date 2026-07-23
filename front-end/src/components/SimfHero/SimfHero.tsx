@@ -6,6 +6,7 @@ import styles from "./MaritimeHero.module.css";
 import { defaultContent } from "./content";
 import { useState } from "react";
 import ContactModal from "@/components/modal/ContactModal";
+import Image from 'next/image'
 
 type IconName = "shield" | "anchor" | "calendar" | "pin";
 
@@ -38,6 +39,7 @@ interface SimfHeroProps {
   videoSrc?: string;
   posterSrc?: string;
   content?: HeroContent;
+  imgSrc?: string;
 }
 
 const ICONS: Record<IconName, React.ReactNode> = {
@@ -91,6 +93,7 @@ function Arrow({ rtl }: { rtl: boolean }) {
 
 export default function SimfHero({
   videoSrc = "/videos/maritime-hero.mp4.mp4",
+  imgSrc = "/2.webp",
   posterSrc,
   content,
 }: SimfHeroProps) {
@@ -110,7 +113,7 @@ export default function SimfHero({
       dir={isRTL ? "rtl" : "ltr"}
       data-lang={locale}
     >
-      <video
+      {/* <video
         className={styles.video}
         src={videoSrc}
         poster={posterSrc}
@@ -118,6 +121,14 @@ export default function SimfHero({
         muted
         loop
         playsInline
+      /> */}
+      <Image
+        className={styles.video}
+        src={isRTL ? "/1.webp" : "/2.webp"} // or imageSrc if you renamed the variable
+        alt="Hero image"
+        fill
+        priority
+        sizes="100vw"
       />
 
       <div className={styles.overlay} />
@@ -127,7 +138,9 @@ export default function SimfHero({
 
         <span className={styles.eyebrowRule} />
 
-        <h1 className={styles.title}>{t.title}</h1>
+        <h1 className={`${styles.title} font-['Noto Kufi Arabic']`}>
+          {t.title}
+        </h1>
 
         <p className={styles.subtitle}>{t.subtitle}</p>
 
